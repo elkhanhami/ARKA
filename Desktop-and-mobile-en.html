@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Article</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Blog/css/en/Mobile-Blog.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="Blog/css/en/Mobile-Blog.css" media="(min-width: 768px)">
+</head>
+
+<body>
+    <!-- نوار پیشرفت خواندن -->
+    <div class="reading-progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- هدر موبایل -->
+    <header class="mobile-header">
+        <a href="en-web.html" class="mobile-logo">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="mobile-logo"><span>َARKA</span></div>
+        
+        <div class="header-controls">
+            <!-- <button class="icon-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button> -->
+            <!-- <button class="icon-btn" id="bookmarkBtn">
+                <i class="far fa-bookmark"></i>
+            </button> -->
+            <button class="icon-btn" id="settingsBtn">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- محتوای اصلی -->
+    <main class="mobile-container">
+        <article>
+            <header class="article-header">
+                <span class="mobile-category">Art & Design</span>
+                <h1 class="mobile-title">The Art of Modern Floral Arranging</h1>
+                <p class="mobile-subtitle">Where nature meets contemporary design in beautiful harmony</p>
+                
+                <div class="author-mobile">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Author" class="author-avatar-mobile">
+                    <div>
+                        <h4 style="font-size: 16px; margin-bottom: 5px;">Elkhan Hami</h4>
+                        <p style="font-size: 13px; color: #888;">Lead Designer & Creative Director</p>
+                    </div>
+                </div>
+                
+                <div class="meta-mobile">
+                    <span><i class="far fa-calendar"></i> Sep 15, 2023</span>
+                    <span><i class="far fa-clock"></i> 8 min read</span>
+                    <span><i class="far fa-eye"></i> 1.1k</span>
+                </div>
+                
+                <img src="image/blog/photo_1_2025-12-07_13-31-36.jpg" alt="Featured" class="featured-image-mobile fade-in">
+            </header>
+
+            <div class="mobile-content">
+                <h2>Introduction</h2>
+                <p>In the evolving landscape of floral artistry, we stand at the intersection of tradition and innovation. The modern approach to flower arranging has transcended mere decoration to become a form of artistic expression, environmental consciousness, and emotional storytelling.</p>
+                
+                <div class="mobile-highlight fade-in">
+                    <p>"True floral artistry lies in the dialogue between the wild, untamed beauty of nature and the intentional, considered hand of the designer."</p>
+                </div>
+                
+                <h2>The Philosophy</h2>
+                <p>Modern floral design is rooted in several key principles that distinguish it from traditional approaches. We celebrate the unique character of each stem—the curve that wasn't planned, the leaf with a blemish, the bud that refuses to open.</p>
+                
+                <img src="image/blog/photo_2025-12-07_13-31-24.jpg" alt="Design" class="mobile-image fade-in">
+                
+                <h3>Embracing Imperfection</h3>
+                <p>Unlike many art forms, floral arrangements are inherently temporary. We embrace this transience, creating designs that change and evolve over their lifespan, offering different beauty each day.</p>
+                
+                <h2>Innovative Techniques</h2>
+                <p>The toolbox of today's floral artist has expanded dramatically. Beyond traditional mechanics, we now incorporate techniques from sculpture, architecture, and even fashion design.</p>
+                
+                <h3>The Floating Stem Method</h3>
+                <p>By carefully balancing stems within transparent vessels, we create arrangements that appear to defy gravity. This technique emphasizes the individual beauty of each flower while creating a sense of lightness and movement.</p>
+                
+                <img src="image/blog/photo_2_2025-12-07_13-31-36.jpg" alt="Technique" class="mobile-image fade-in">
+                
+                <h2>Sustainable Practices</h2>
+                <p>Sustainability isn't just an add-on in modern floristry—it's integrated into every aspect of our practice. We prioritize flowers grown within 100km of our studio, reducing transportation emissions and supporting local agriculture.</p>
+                
+                <h2>Conclusion</h2>
+                <p>The evolution of floral design represents a broader cultural shift toward more authentic, sustainable, and expressive forms of creativity. As we move forward, the boundaries between floristry, sculpture, installation art, and environmental design will continue to blur.</p>
+            </div>
+        </article>
+
+        <!-- مقالات مرتبط -->
+        <section class="related-mobile">
+            <h2 class="mobile-section-title">Continue Reading</h2>
+            <div class="related-scroll">
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-186559387-1024x1024.jpg" alt="Seasonal Guide" class="related-image-mobile">
+                    <div class="related-category-mobile">Seasonal Guide</div>
+                    <h3 class="related-title-mobile">Autumn Blooms: Creating Warm Arrangements</h3>
+                </a>
+                
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Sustainable Design" class="related-image-mobile">
+                    <div class="related-category-mobile">Sustainability</div>
+                    <h3 class="related-title-mobile">Zero-Waste Floristry Guide</h3>
+                </a>
+                
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Workshop" class="related-image-mobile">
+                    <div class="related-category-mobile">Education</div>
+                    <h3 class="related-title-mobile">Advanced Color Theory in Floral Design</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- منوی پایین -->
+    <!-- <nav class="mobile-bottom-nav">
+        <a href="#" class="nav-btn active">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+        <a href="#" class="nav-btn">
+            <i class="far fa-bookmark"></i>
+            Saved
+        </a>
+        <a href="#" class="nav-btn">
+            <i class="fas fa-share-alt"></i>
+            Share
+        </a>
+        <a href="desktop-article.html" class="nav-btn">
+            <i class="fas fa-desktop"></i>
+            Desktop
+        </a>
+    </nav> -->
+
+    <!-- منوی تنظیمات -->
+    <div class="settings-menu" id="settingsMenu">
+        <h3 class="settings-title">Reading Settings</h3>
+        
+        <div class="setting-group">
+            <label class="setting-label">Font Size</label>
+            <div class="font-size-selector">
+                <button class="font-btn" id="mobileSmallFont">Small</button>
+                <button class="font-btn active" id="mobileMediumFont">Medium</button>
+                <button class="font-btn" id="mobileLargeFont">Large</button>
+            </div>
+        </div>
+        
+        <div class="setting-group">
+            <label class="setting-label">Theme</label>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-label">Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <!-- <div class="setting-group">
+            <label class="setting-label">Line Height</label>
+            <div class="font-size-selector">
+                <button class="font-btn">Compact</button>
+                <button class="font-btn active">Comfortable</button>
+                <button class="font-btn">Spacious</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- لینک نسخه دسکتاپ -->
+    <!-- <a href="desktop-article.html" class="desktop-link">
+        <i class="fas fa-desktop"></i> View Desktop Version
+    </a> -->
+
+
+
+
+
+<!-- Desktop -->
+
+
+
+
+    <!-- سایدبار دسکتاپ -->
+    <aside class="desktop-sidebar">
+        <div class="logo">
+            <i class="fas fa-feather-alt"></i>
+            <span>َARKA</span>
+        </div>
+        
+        <a href="en-web.html" class="back-home">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+        
+        <div class="article-info">
+            <h3>ARTICLE DETAILS</h3>
+            <div class="info-item">
+                <i class="far fa-calendar"></i>
+                <span>Published: September 15, 2023</span>
+            </div>
+            <div class="info-item">
+                <i class="far fa-clock"></i>
+                <span>Reading time: 8 minutes</span>
+            </div>
+            <div class="info-item">
+                <i class="far fa-bookmark"></i>
+                <span>Category: Floral Design</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Level: Intermediate</span>
+            </div>
+        </div>
+        
+        <div class="table-of-contents">
+            <h3 class="toc-title">CONTENTS</h3>
+            <ul class="toc-list">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#philosophy">The Philosophy</a></li>
+                <li><a href="#techniques">Modern Techniques</a></li>
+                <li><a href="#seasonal">Seasonal Approach</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+        
+        <div class="share-sidebar">
+            <h3 class="share-title">SHARE THIS</h3>
+            <div class="share-buttons">
+                <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="share-btn"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- محتوای اصلی -->
+    <main class="article-container">
+        <header class="article-header animate-in">
+            <span class="article-category">Art & Design</span>
+            <h1 class="article-title">The Art of Modern Floral Arranging: Where Nature Meets Design</h1>
+            <p class="article-subtitle">Discover how contemporary floristry is redefining beauty through innovative techniques, sustainable practices, and artistic expression.</p>
+            
+            <div class="author-info">
+                <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Author" class="author-avatar">
+                <div class="author-details">
+                    <h4>Elkhan Hami</h4>
+                    <p>Lead Designer & Creative Director</p>
+                </div>
+            </div>
+            
+            <div class="article-meta">
+                <span><i class="far fa-calendar"></i> September 15, 2023</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="far fa-eye"></i> 1.1k views</span>
+            </div>
+            
+            <img src="image/blog/photo_1_2025-12-07_13-31-36.jpg" alt="Featured" class="featured-image animate-in">
+        </header>
+
+        <article class="article-content">
+            <section id="intro">
+                <h2>Introduction: The New Era of Floral Design</h2>
+                <p>In the evolving landscape of floral artistry, we stand at the intersection of tradition and innovation. The modern approach to flower arranging has transcended mere decoration to become a form of artistic expression, environmental consciousness, and emotional storytelling. This transformation represents not just a shift in techniques, but a fundamental reimagining of what floral design can be.</p>
+                
+                <p>Gone are the days of rigid, symmetrical arrangements. Today's floral artists embrace asymmetry, negative space, and unconventional materials. We work with flowers not as static objects, but as living, breathing elements that continue to evolve even after they're arranged. This philosophy creates designs that are dynamic, expressive, and deeply connected to their environment.</p>
+            </section>
+            
+            <div class="highlight-box animate-in">
+                <p>"True floral artistry lies in the dialogue between the wild, untamed beauty of nature and the intentional, considered hand of the designer. It's not about controlling nature, but collaborating with it."</p>
+            </div>
+            
+            <section id="philosophy">
+                <h2>The Philosophy Behind Contemporary Floristry</h2>
+                <p>Modern floral design is rooted in several key principles that distinguish it from traditional approaches:</p>
+                
+                <h3>Embracing Imperfection</h3>
+                <p>We celebrate the unique character of each stem—the curve that wasn't planned, the leaf with a blemish, the bud that refuses to open. These imperfections tell stories and add authenticity to our arrangements.</p>
+                
+                <h3>Temporal Beauty</h3>
+                <p>Unlike many art forms, floral arrangements are inherently temporary. We embrace this transience, creating designs that change and evolve over their lifespan, offering different beauty each day.</p>
+                
+                <div class="image-grid">
+                    <div>
+                        <img src="/image/photo_1_2025-12-07_13-31-36.jpg"Floral Design class="article-image">
+                        <p class="image-caption">Modern arrangement with emphasis on line and form</p>
+                    </div>
+                    <div>
+                        <img src="image/blog/photo_2_2025-12-07_13-31-36.jpg" alt="Color Study" class="article-image">
+                        <p class="image-caption">Color theory in contemporary floral composition</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="techniques">
+                <h2>Innovative Techniques in Modern Arranging</h2>
+                <p>The toolbox of today's floral artist has expanded dramatically. Beyond traditional mechanics, we now incorporate techniques from sculpture, architecture, and even fashion design.</p>
+                
+                <h3>The Floating Stem Method</h3>
+                <p>By carefully balancing stems within transparent vessels, we create arrangements that appear to defy gravity. This technique emphasizes the individual beauty of each flower while creating a sense of lightness and movement.</p>
+                
+                <h3>Seasonal Weaving</h3>
+                <p>Incorporating foraged elements like vines, branches, and grasses, we weave these materials together to create structural frameworks that support floral elements. This approach connects the arrangement directly to its seasonal context.</p>
+                
+                <pre><code>// Example of modern floral design principles
+const modernFloristry = {
+    principles: [
+        "Embrace asymmetry",
+        "Celebrate negative space",
+        "Use unconventional materials",
+        "Prioritize sustainability",
+        "Tell emotional stories"
+    ],
+    techniques: [
+        "Floating stem arrangements",
+        "Seasonal weaving",
+        "Modular design systems",
+        "Living installations"
+    ],
+    materials: {
+        traditional: ["roses", "tulips", "lilies"],
+        unconventional: ["dried seed pods", "preserved moss", 
+                       "architectural foliage", "climbing vines"]
+    }
+};</code></pre>
+            </section>
+            
+            <section id="sustainability">
+                <h2>Sustainable Practices in Contemporary Design</h2>
+                <p>Sustainability isn't just an add-on in modern floristry—it's integrated into every aspect of our practice:</p>
+                
+                <p><strong>Local Sourcing:</strong> We prioritize flowers grown within 100km of our studio, reducing transportation emissions and supporting local agriculture.</p>
+                
+                <p><strong>Seasonal Awareness:</strong> Our designs respond directly to what's blooming naturally in each season, creating arrangements that feel authentic to their time and place.</p>
+                
+                <p><strong>Waste Reduction:</strong> Every element of our process is designed to minimize waste. We compost all organic material, reuse containers, and repurpose materials whenever possible.</p>
+            </section>
+            
+            <section id="conclusion">
+                <h2>Conclusion: The Future of Floral Art</h2>
+                <p>The evolution of floral design represents a broader cultural shift toward more authentic, sustainable, and expressive forms of creativity. As we move forward, the boundaries between floristry, sculpture, installation art, and environmental design will continue to blur.</p>
+                
+                <p>At , we see this not as the loss of tradition, but as its beautiful evolution. By honoring the wisdom of the past while embracing the possibilities of the present, we're helping to shape a future where floral art is recognized not just as decoration, but as a vital form of contemporary artistic expression.</p>
+            </section>
+        </article>
+
+        <!-- مقالات مرتبط -->
+        <section class="related-articles">
+            <h2 class="section-title">The rest of the content</h2>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-186559387-1024x1024.jpg" alt="Seasonal Guide" class="related-image">
+                    <div class="related-category">Seasonal Guide</div>
+                    <h3 class="related-title">Autumn Blooms: Creating Warm, Textural Arrangements</h3>
+                </a>
+                
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Sustainable Design" class="related-image">
+                    <div class="related-category">Sustainability</div>
+                    <h3 class="related-title">Zero-Waste Floristry: A Complete Guide</h3>
+                </a>
+                
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Workshop" class="related-image">
+                    <div class="related-category">Education</div>
+                    <h3 class="related-title">Masterclass: Advanced Color Theory in Floral Design</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- کنترل‌های خواندن -->
+    <div class="reading-controls">
+        <button class="control-btn" id="prevBtn" title="Previous section">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="font-size-control">
+            <button class="font-size-btn" id="smallFont">A</button>
+            <button class="font-size-btn active" id="mediumFont">A</button>
+            <button class="font-size-btn" id="largeFont">A</button>
+        </div>
+        
+        <button class="control-btn" id="darkModeToggle" title="Toggle dark mode">
+            <i class="far fa-moon"></i>
+        </button>
+        
+        <button class="control-btn" id="nextBtn" title="Next section">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- لینک نسخه موبایل -->
+    <!-- <a href="mobile-article.html" class="mobile-link">
+        <i class="fas fa-mobile-alt"></i> View Mobile Version
+    </a> -->
+
+    <script src="Blog/js/Desktop-and-Mobile.js" type="text/javascript"></script>
+</body>
+</html>

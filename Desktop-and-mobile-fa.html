@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Article</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Blog/css/fa/Mobile-Blog.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="Blog/css/fa/Desktop-Blog.css" media="(min-width: 768px)">
+</head>
+
+<body>
+    <!-- نوار پیشرفت خواندن -->
+    <div class="reading-progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- هدر موبایل -->
+    <header class="mobile-header" dir="ltr">
+        <a href="index.html" class="mobile-logo">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="mobile-logo"><span>َARKA</span></div>
+        
+        <div class="header-controls">
+            <!-- <button class="icon-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button> -->
+            <!-- <button class="icon-btn" id="bookmarkBtn">
+                <i class="far fa-bookmark"></i>
+            </button> -->
+            <button class="icon-btn" id="settingsBtn">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- محتوای اصلی -->
+    <main class="mobile-container">
+        <article>
+            <header class="article-header">
+                <span class="mobile-category">هنر و طراحی</span>
+                <h1 class="mobile-title">هنر گل‌آرایی مدرن</h1>
+                <p class="mobile-subtitle">جایی که طبیعت با طراحی معاصر در هماهنگی زیبا روبرو می‌شود</p>
+                
+                <div class="author-mobile">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Author" class="author-avatar-mobile">
+                    <div>
+                        <h4 style="font-size: 16px; margin-bottom: 5px;">الخان حامی</h4>
+                        <p style="font-size: 13px; color: #888;">طراح ارشد و مدیر خلاق</p>
+                    </div>
+                </div>
+                
+                <div class="meta-mobile">
+                    <span><i class="far fa-calendar"></i> Sep 15, 2023</span>
+                    <span><i class="far fa-clock"></i> 8 دقیقه</span>
+                    <span><i class="far fa-eye"></i> 1.1k</span>
+                </div>
+                
+                <img src="image/blog/photo_1_2025-12-07_13-31-36.jpg" alt="Featured" class="featured-image-mobile fade-in">
+            </header>
+
+            <div class="mobile-content">
+                <h2>مقدمه</h2>
+                <p>در چشم‌انداز در حال تکامل هنر گل‌آرایی، ما در نقطه تلاقی سنت و نوآوری ایستاده‌ایم. رویکرد مدرن به گل‌آرایی از صرفاً تزئین فراتر رفته و به شکلی از بیان هنری، آگاهی زیست‌محیطی و داستان‌سرایی احساسی تبدیل شده است.</p>
+                
+                <div class="mobile-highlight fade-in">
+                    <p>"هنر گل‌آرایی واقعی در گفتگوی بین زیبایی وحشی و رام‌نشده طبیعت و دست‌های هدفمند و سنجیده طراح نهفته است."</p>
+                </div>
+                
+                <h2>فلسفه</h2>
+                <p>طراحی گل مدرن ریشه در چندین اصل کلیدی دارد که آن را از رویکردهای سنتی متمایز می‌کند. ما شخصیت منحصر به فرد هر ساقه را گرامی می‌داریم - منحنی که از قبل برنامه‌ریزی نشده بود، برگی که لکه دارد، غنچه‌ای که از باز شدن امتناع می‌کند.</p>
+                
+                <img src="image/blog/photo_2025-12-07_13-31-24.jpg" alt="Design" class="mobile-image fade-in">
+                
+                <h3>پذیرفتن نقص</h3>
+                <p>برخلاف بسیاری از اشکال هنری، گل‌آرایی ذاتاً موقتی است. ما این ناپایداری را می‌پذیریم و طرح‌هایی خلق می‌کنیم که در طول عمر خود تغییر و تکامل می‌یابند و هر روز زیبایی متفاوتی ارائه می‌دهند.</p>
+                
+                <h2>تکنیک‌های نوآورانه</h2>
+                <p>جعبه ابزار هنرمند گل‌آرایی امروزی به طرز چشمگیری گسترش یافته است. ما اکنون فراتر از مکانیک سنتی، تکنیک‌هایی از مجسمه‌سازی، معماری و حتی طراحی مد را در هم می‌آمیزیم.</p>
+                
+                <h3>روش ساقه شناور</h3>
+                <p>با متعادل کردن دقیق ساقه‌ها در ظروف شفاف، ما چیدمان‌هایی ایجاد می‌کنیم که به نظر می‌رسد بر جاذبه غلبه می‌کنند. این تکنیک بر زیبایی منحصر به فرد هر گل تأکید می‌کند و در عین حال حس سبکی و حرکت را ایجاد می‌کند.</p>
+                
+                <img src="image/blog/photo_2_2025-12-07_13-31-36.jpg" alt="Technique" class="mobile-image fade-in">
+                
+                <h2>شیوه‌های پایدار</h2>
+                <p>پایداری فقط یک افزونه در گل‌آرایی مدرن نیست - بلکه در تمام جنبه‌های فعالیت ما گنجانده شده است. ما گل‌هایی را که در فاصله ۱۰۰ کیلومتری استودیوی ما پرورش می‌یابند، در اولویت قرار می‌دهیم، انتشار گازهای گلخانه‌ای ناشی از حمل و نقل را کاهش می‌دهیم و از کشاورزی محلی حمایت می‌کنیم.</p>
+                
+                <h2>نتیجه‌گیری</h2>
+                <p>تکامل طراحی گل، نشان‌دهنده‌ی یک تغییر فرهنگی گسترده‌تر به سمت اشکال اصیل‌تر، پایدارتر و رساتر خلاقیت است. با پیشرفت، مرزهای بین گل‌آرایی، مجسمه‌سازی، هنر چیدمان و طراحی محیطی همچنان محو خواهد شد.</p>
+            </div>
+        </article>
+
+        <!-- مقالات مرتبط -->
+        <section class="related-mobile">
+            <h2 class="mobile-section-title">ادامه مطلب</h2>
+            <div class="related-scroll">
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-186559387-1024x1024.jpg" alt="Seasonal Guide" class="related-image-mobile">
+                    <div class="related-category-mobile">راهنمای فصلی</div>
+                    <h3 class="related-title-mobile">شکوفه‌های پاییزی: خلق چیدمان‌های گرم</h3>
+                </a>
+                
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Sustainable Design" class="related-image-mobile">
+                    <div class="related-category-mobile">پایداری</div>
+                    <h3 class="related-title-mobile">راهنمای گل‌آرایی بدون زباله</h3>
+                </a>
+                
+                <a href="#" class="related-card-mobile">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Workshop" class="related-image-mobile">
+                    <div class="related-category-mobile">آموزش</div>
+                    <h3 class="related-title-mobile">نظریه رنگ پیشرفته در طراحی گل</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- منوی پایین -->
+    <!-- <nav class="mobile-bottom-nav">
+        <a href="#" class="nav-btn active">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+        <a href="#" class="nav-btn">
+            <i class="far fa-bookmark"></i>
+            Saved
+        </a>
+        <a href="#" class="nav-btn">
+            <i class="fas fa-share-alt"></i>
+            Share
+        </a>
+        <a href="desktop-article.html" class="nav-btn">
+            <i class="fas fa-desktop"></i>
+            Desktop
+        </a>
+    </nav> -->
+
+    <!-- منوی تنظیمات -->
+    <div class="settings-menu" id="settingsMenu">
+        <h3 class="settings-title">تنظیمات خواندن</h3>
+        
+        <div class="setting-group">
+            <label class="setting-label">اندازه فونت</label>
+            <div class="font-size-selector">
+                <button class="font-btn" id="mobileSmallFont">کوچک</button>
+                <button class="font-btn active" id="mobileMediumFont">متوسط</button>
+                <button class="font-btn" id="mobileLargeFont">بزرگ</button>
+            </div>
+        </div>
+        
+        <div class="setting-group">
+            <label class="setting-label">تم</label>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-label">حالت تاریک</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <!-- <div class="setting-group">
+            <label class="setting-label">Line Height</label>
+            <div class="font-size-selector">
+                <button class="font-btn">Compact</button>
+                <button class="font-btn active">Comfortable</button>
+                <button class="font-btn">Spacious</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- لینک نسخه دسکتاپ -->
+    <!-- <a href="desktop-article.html" class="desktop-link">
+        <i class="fas fa-desktop"></i> View Desktop Version
+    </a> -->
+
+
+
+
+
+
+
+
+<!-- Desktop -->
+
+
+    <!-- سایدبار دسکتاپ فارسی -->
+    <aside class="desktop-sidebar">
+        <div class="logo">
+            <i class="fas fa-feather-alt"></i>
+            <span>آرکا</span>
+        </div>
+        
+        <a href="index.html" class="back-home">
+            <i class="fas fa-arrow-right"></i>
+            بازگشت به خانه
+        </a>
+        
+        <div class="article-info">
+            <h3>جزئیات مقاله</h3>
+            <div class="info-item">
+                <i class="far fa-calendar"></i>
+                <span>تاریخ انتشار: ۲۴ شهریور ۱۴۰۲</span>
+            </div>
+            <div class="info-item">
+                <i class="far fa-clock"></i>
+                <span>زمان مطالعه: ۸ دقیقه</span>
+            </div>
+            <div class="info-item">
+                <i class="far fa-bookmark"></i>
+                <span>دسته‌بندی: طراحی گل</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-chart-line"></i>
+                <span>سطح: متوسط</span>
+            </div>
+        </div>
+        
+        <div class="table-of-contents">
+            <h3 class="toc-title">فهرست مطالب</h3>
+            <ul class="toc-list">
+                <li><a href="#intro">مقدمه</a></li>
+                <li><a href="#philosophy">فلسفه طراحی</a></li>
+                <li><a href="#techniques">تکنیک‌های مدرن</a></li>
+                <li><a href="#seasonal">رویکرد فصلی</a></li>
+                <li><a href="#sustainability">پایداری</a></li>
+                <li><a href="#conclusion">نتیجه‌گیری</a></li>
+            </ul>
+        </div>
+        
+        <div class="share-sidebar">
+            <h3 class="share-title">اشتراک‌گذاری</h3>
+            <div class="share-buttons">
+                <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="share-btn"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="share-btn"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- محتوای اصلی فارسی -->
+    <main class="article-container">
+        <header class="article-header animate-in">
+            <span class="article-category">هنر و طراحی</span>
+            <h1 class="article-title">هنر چیدمان گل مدرن: جایی که طبیعت با طراحی ملاقات می‌کند</h1>
+            <p class="article-subtitle">کشف کنید که چگونه گل‌آرایی معاصر از طریق تکنیک‌های نوآورانه، روش‌های پایدار و بیان هنری در حال بازتعریف زیبایی است.</p>
+            
+            <div class="author-info">
+                <img src="image/admin/IMG_20240319_023029_160.jpg" alt="نویسنده" class="author-avatar">
+                <div class="author-details">
+                    <h4>الخان حامی</h4>
+                    <p>طراح ارشد و مدیر خلاقیت</p>
+                </div>
+            </div>
+            
+            <div class="article-meta">
+                <span><i class="far fa-calendar"></i> ۲۴ شهریور ۱۴۰۲</span>
+                <span><i class="far fa-clock"></i> ۸ دقیقه مطالعه</span>
+                <span><i class="far fa-eye"></i> ۱.۱ هزار بازدید</span>
+            </div>
+            
+            <img src="image/blog/photo_1_2025-12-07_13-31-36.jpg" alt="تصویر اصلی" class="featured-image animate-in">
+        </header>
+
+        <article class="article-content">
+            <section id="intro">
+                <h2>مقدمه: عصر جدید طراحی گل</h2>
+                <p>در منظره در حال تحول هنر گل‌آرایی، ما در تقاطع سنت و نوآوری ایستاده‌ایم. رویکرد مدرن به چیدمان گل فراتر از تزئین صرف رفته و به شکلی از بیان هنری، آگاهی محیطی و روایت احساسی تبدیل شده است. این دگرگونی نه تنها نشان‌دهنده تغییر در تکنیک‌ها، بلکه بازاندیشی اساسی در چیستی طراحی گل است.</p>
+                
+                <p>روزهای آرایش‌های سفت و سخت و متقارن گذشته است. هنرمندان گل‌آرای امروزی عدم تقارن، فضای منفی و مواد غیرمتعارف را در آغوش می‌گیرند. ما با گل‌ها نه به عنوان اشیاء ثابت، بلکه به عنوان عناصر زنده و پویا کار می‌کنیم که حتی پس از چیدمان نیز همچنان تکامل می‌یابند. این فلسفه طرح‌هایی پویا، بیانی و عمیقاً متصل به محیطشان خلق می‌کند.</p>
+            </section>
+            
+            <div class="highlight-box animate-in">
+                <p>"هنر واقعی گل‌آرایی در گفت‌وگو بین زیبایی وحشی و رام‌نشدنی طبیعت و دست عمدی و سنجیده طراح نهفته است. این کار درباره کنترل طبیعت نیست، بلکه همکاری با آن است."</p>
+            </div>
+            
+            <section id="philosophy">
+                <h2>فلسفه پشت گل‌آرایی معاصر</h2>
+                <p>طراحی گل مدرن در چند اصل کلیدی ریشه دارد که آن را از رویکردهای سنتی متمایز می‌کند:</p>
+                
+                <h3>در آغوش گرفتن ناکامل بودن</h3>
+                <p>ما شخصیت منحصر به فرد هر ساقه را جشن می‌گیریم - خمیدگی که برنامه‌ریزی نشده بود، برگ با لکه، غنچه‌ای که از باز شدن امتناع می‌کند. این نقص‌ها داستان می‌گویند و به آرایش‌هایمان اصالت می‌بخشند.</p>
+                
+                <h3>زیبایی موقت</h3>
+                <p>برخلاف بسیاری از اشکال هنری، آرایش‌های گل به ذات موقت هستند. ما این گذرا بودن را می‌پذیریم و طرح‌هایی خلق می‌کنیم که در طول عمرشان تغییر و تکامل می‌یابند و هر روز زیبایی متفاوتی ارائه می‌دهند.</p>
+                
+                <div class="image-grid">
+                    <div>
+                        <img src="image/blog/photo_2025-12-07_13-31-24.jpg" alt="طراحی گل" class="article-image">
+                        <p class="image-caption">آرایش مدرن با تأکید بر خط و فرم</p>
+                    </div>
+                    <div>
+                        <img src="image/blog/photo_2_2025-12-07_13-31-36.jpg" alt="مطالعه رنگ" class="article-image">
+                        <p class="image-caption">تئوری رنگ در ترکیب‌بندی گل معاصر</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="techniques">
+                <h2>تکنیک‌های نوآورانه در آرایش مدرن</h2>
+                <p>جعبه ابزار هنرمند گل‌آرای امروزی به طور چشمگیری گسترش یافته است. فراتر از مکانیک سنتی، ما اکنون تکنیک‌هایی از مجسمه‌سازی، معماری و حتی طراحی مد را نیز دربرمی‌گیریم.</p>
+                
+                <h3>روش ساقه شناور</h3>
+                <p>با متعادل کردن دقیق ساقه‌ها در داخل ظروف شفاف، ما آرایش‌هایی خلق می‌کنیم که به نظر می‌رسد جاذبه را به چالش می‌کشند. این تکنیک بر زیبایی فردی هر گل تأکید می‌کند و در عین حال حس سبکی و حرکت ایجاد می‌کند.</p>
+                
+                <h3>بافت فصلی</h3>
+                <p>با گنجاندن عناصر گردآوری شده مانند پیچک، شاخه و علف، ما این مواد را با هم می‌بافیم تا چارچوب‌های ساختاری ایجاد کنیم که عناصر گل را حمایت می‌کنند. این رویکرد آرایش را مستقیماً به زمینه فصلی آن متصل می‌کند.</p>
+                
+                <pre><code>// مثال اصول طراحی گل مدرن
+const modernFloristry = {
+    principles: [
+        "Embrace asymmetry",
+        "Celebrate negative space",
+        "Use unconventional materials",
+        "Prioritize sustainability",
+        "Tell emotional stories"
+    ],
+    techniques: [
+        "Floating stem arrangements",
+        "Seasonal weaving",
+        "Modular design systems",
+        "Living installations"
+    ],
+    materials: {
+        traditional: ["roses", "tulips", "lilies"],
+        unconventional: ["dried seed pods", "preserved moss", 
+                       "architectural foliage", "climbing vines"]
+    }
+};</code></pre>
+            </section>
+            
+            <section id="sustainability">
+                <h2>روش‌های پایدار در طراحی معاصر</h2>
+                <p>پایداری فقط یک افزونه در گل‌آرایی مدرن نیست - در هر جنبه از کار ما ادغام شده است:</p>
+                
+                <p><strong>منبع‌یابی محلی:</strong> ما گل‌هایی را در اولویت قرار می‌دهیم که در فاصله ۱۰۰ کیلومتری استودیوی ما رشد می‌کنند، انتشارات حمل و نقل را کاهش می‌دهیم و از کشاورزی محلی حمایت می‌کنیم.</p>
+                
+                <p><strong>آگاهی فصلی:</strong> طرح‌های ما مستقیماً به آنچه در هر فصل به طور طبیعی شکوفا می‌شود پاسخ می‌دهند و آرایش‌هایی خلق می‌کنند که به زمان و مکان خود احساس اصالت دارند.</p>
+                
+                <p><strong>کاهش ضایعات:</strong> هر عنصر از فرآیند ما برای به حداقل رساندن ضایعات طراحی شده است. ما تمام مواد آلی را کمپوست می‌کنیم، ظروف را دوباره استفاده می‌کنیم و تا حد ممکن مواد را دوباره کاربردی می‌کنیم.</p>
+            </section>
+            
+            <section id="conclusion">
+                <h2>نتیجه‌گیری: آینده هنر گل</h2>
+                <p>تکامل طراحی گل نشان‌دهنده یک تغییر فرهنگی گسترده‌تر به سمت اشکال اصیل‌تر، پایدارتر و بیانی‌تر خلاقیت است. همانطور که به پیش می‌رویم، مرزهای بین گل‌آرایی، مجسمه‌سازی، هنر نصب و طراحی محیطی همچنان محو خواهند شد.</p>
+                
+                <p>در آرکا، ما این را نه به عنوان از دست دادن سنت، بلکه به عنوان تکامل زیبای آن می‌بینیم. با احترام به خرد گذشته و در عین حال پذیرش امکانات حال، ما کمک می‌کنیم تا آینده‌ای را شکل دهیم که در آن هنر گل نه فقط به عنوان تزئین، بلکه به عنوان شکلی حیاتی از بیان هنری معاصر شناخته شود.</p>
+            </section>
+        </article>
+
+        <!-- مقالات مرتبط فارسی -->
+        <section class="related-articles">
+            <h2 class="section-title">مطالب بیشتر</h2>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-186559387-1024x1024.jpg" alt="راهنمای فصلی" class="related-image">
+                    <div class="related-category">راهنمای فصلی</div>
+                    <h3 class="related-title">شکوفه‌های پاییزی: خلق آرایش‌های گرم و بافت‌دار</h3>
+                </a>
+                
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="طراحی پایدار" class="related-image">
+                    <div class="related-category">پایداری</div>
+                    <h3 class="related-title">گل‌آرایی بدون ضایعات: یک راهنمای کامل</h3>
+                </a>
+                
+                <a href="#" class="related-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="کارگاه" class="related-image">
+                    <div class="related-category">آموزش</div>
+                    <h3 class="related-title">کلاس استادی: تئوری رنگ پیشرفته در طراحی گل</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- کنترل‌های خواندن فارسی -->
+    <div class="reading-controls">
+        <button class="control-btn" id="nextBtn" title="بخش بعدی">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="font-size-control">
+            <button class="font-size-btn" id="smallFont">ک</button>
+            <button class="font-size-btn active" id="mediumFont">م</button>
+            <button class="font-size-btn" id="largeFont">ب</button>
+        </div>
+        
+        <button class="control-btn" id="darkModeToggle" title="تغییر حالت تاریک">
+            <i class="far fa-moon"></i>
+        </button>
+        
+        <button class="control-btn" id="prevBtn" title="بخش قبلی">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <script src="Blog/js/Desktop-and-Mobile.js" type="text/javascript"></script>
+
+</body>
+</html>
