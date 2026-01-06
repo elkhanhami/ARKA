@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog-web/en/styles.css">
+    <link rel="stylesheet" href="en-web/css/foter/foter-mo-en.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="en-web/css/foter/foter-des-en.css" media="(min-width: 768px)">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">AR<span class="logo-dot">KA</span></a>
+            <div class="nav-links">
+                <a href="en-web.html" class="nav-link">Home</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#authors" class="nav-link">Authors</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- <div class="hero-badge">Blog</div> -->
+                <h1 class="hero-title">
+                    <span class="title-line">Blogs,</span>
+                    <span class="title-line">Green wall</span>
+                    <span class="title-line">Specialized</span>
+                </h1>
+                <p class="hero-subtitle">
+                    An in-depth look at green wall construction in the realm of decoration.
+                    Views from our team and founders.
+                </p>
+                <a href="#articles" class="cta-button">
+                    <span>Start Reading</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-background">
+                <div class="grid-overlay"></div>
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section id="blog" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Blog</h2>
+            <p class="section-description">
+                In-depth analysis of beautiful plants, their discovery and care.
+            </p>
+  <!-- Main Featured Article -->     
+            <div class="featured-grid">
+                <article class="featured-main">
+                    <img src="image/Portfolio/f1fc8b449e797523c4cdcb7faa42f2f2.jpg" alt="Selected blogs" class="article-image">
+                    <div class="article-meta">
+                        <span class="article-category">Selected blogs</span>
+                        <span class="article-date">July</span>
+                    </div>
+                    <h3 class="article-title">In-depth analysis of beautiful plants, their discovery and care</h3>
+                    <p class="article-excerpt">
+                        The green wall is one of the modern decorations in the world that greatly  
+                        contributes to greening and preserving the environment.
+                    </p>
+                    <!-- <div class="article-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <span class="author-name">Elkhan Hami</span>
+                            <span class="author-role">developer</span>
+                        </div>
+                    </div> -->
+                    <a href="#" class="read-more">Read →</a>
+                </article>
+
+                <!-- Side Featured Articles -->
+                <div class="featured-side">
+                    <article class="side-article">
+                        <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Houseplants" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">Houseplants</span>
+                                <span class="article-date">July</span>
+                            </div>
+                            <h4 class="side-article-title">Plants to keep at home</h4>
+                            <p class="side-article-excerpt">
+                                Methods of maintaining plants
+                            </p>
+                            <a href="#" class="read-more-sm">Read →</a>
+                        </div>
+                    </article>
+
+                    <article class="side-article">
+                        <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Houseplants" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">Houseplants</span>
+                                <span class="article-date">July</span>
+                            </div>
+                            <h4 class="side-article-title">Plants to keep at home</h4>
+                            <p class="side-article-excerpt">
+                                Methods of maintaining plants
+                            </p>
+                            <a href="#" class="read-more-sm">Read →</a>
+                        </div>
+                    </article>
+
+                    <article class="side-article">
+                        <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="Houseplants" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">Houseplants</span>
+                                <span class="article-date">July</span>
+                            </div>
+                            <h4 class="side-article-title">Plants to keep at home</h4>
+                            <p class="side-article-excerpt">
+                                Methods of maintaining plants
+                            </p>
+                            <a href="#" class="read-more-sm">Read →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Categories</h2>
+            <p class="section-description">
+                Check out our thoughts on various areas.
+            </p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Manufacturing methods" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">⚒️</div>
+                        <h3 class="category-title">Manufacturing methods</h3>
+                        <p class="category-description">
+                           Different ways to make a green wall
+                        </p>
+                        <!-- <a href="#" class="category-link">9 Articles</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Manufacturing methods" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">⛏️</div>
+                        <h3 class="category-title">Manufacturing methods</h3>
+                        <p class="category-description">
+                           Different ways to make a green wall
+                        </p>
+                        <!-- <a href="#" class="category-link">9 Articles</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Manufacturing methods" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">🌷</div>
+                        <h3 class="category-title">Manufacturing methods</h3>
+                        <p class="category-description">
+                           Different ways to make a green wall
+                        </p>
+                        <!-- <a href="#" class="category-link">9 Articles</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Manufacturing methods" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">🛒</div>
+                        <h3 class="category-title">Manufacturing methods</h3>
+                        <p class="category-description">
+                           Different ways to make a green wall
+                        </p>
+                        <!-- <a href="#" class="category-link">9 Articles</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="recent">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Publications</h2>
+                <!-- <a href="#" class="view-all">View All →</a> -->
+            </div>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Work with us" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">Work with us</span>
+                            <span class="article-date">February</span>
+                        </div>
+                        <h3 class="article-card-title">Plant breeding</h3>
+                        <p class="article-card-excerpt">
+                            Different ways to maintain each plant
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">Elkhan Hami</span>
+                            </div>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Work with us" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">Work with us</span>
+                            <span class="article-date">February</span>
+                        </div>
+                        <h3 class="article-card-title">Plant breeding</h3>
+                        <p class="article-card-excerpt">
+                            Different ways to maintain each plant
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">Elkhan Hami</span>
+                            </div>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="Work with us" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">Work with us</span>
+                            <span class="article-date">February</span>
+                        </div>
+                        <h3 class="article-card-title">Plant breeding</h3>
+                        <p class="article-card-excerpt">
+                            Different ways to maintain each plant
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">Elkhan Hami</span>
+                            </div>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors -->
+    <section id="authors" class="authors">
+        <div class="container">
+            <h2 class="section-title">Authors</h2>
+            <p class="section-description">
+                Views and founders.
+            </p>
+            
+            <div class="authors-grid">
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-card-image">
+                    <h3 class="author-card-name">Elkhan Hami</h3>
+                    <p class="author-card-role">developer</p>
+                    <p class="author-card-location">Iran, Tabriz</p>
+                    <div class="author-card-topics">
+                        <span class="topic">Disiner</span>
+                        <span class="topic">Research and investigation</span>
+                    </div>
+                    <a href="#" class="author-card-link">View blog</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-card-image">
+                    <h3 class="author-card-name">Elkhan Hami</h3>
+                    <p class="author-card-role">developer</p>
+                    <p class="author-card-location">Iran, Tabriz</p>
+                    <div class="author-card-topics">
+                        <span class="topic">Disiner</span>
+                        <span class="topic">Research and investigation</span>
+                    </div>
+                    <a href="#" class="author-card-link">View blog</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-card-image">
+                    <h3 class="author-card-name">Elkhan Hami</h3>
+                    <p class="author-card-role">developer</p>
+                    <p class="author-card-location">Iran, Tabriz</p>
+                    <div class="author-card-topics">
+                        <span class="topic">Disiner</span>
+                        <span class="topic">Research and investigation</span>
+                    </div>
+                    <a href="#" class="author-card-link">View blog</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="Elkhan Hami" class="author-card-image">
+                    <h3 class="author-card-name">Elkhan Hami</h3>
+                    <p class="author-card-role">developer</p>
+                    <p class="author-card-location">Iran, Tabriz</p>
+                    <div class="author-card-topics">
+                        <span class="topic">Disiner</span>
+                        <span class="topic">Research and investigation</span>
+                    </div>
+                    <a href="#" class="author-card-link">View blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <!-- <section id="about" class="about">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-content">
+                    <h2 class="about-title">About July Insights</h2>
+                    <p class="about-description">
+                        July Insights is the blog of July Fund. We invest in people that we respect, trust, admire, 
+                        and who have set out to build iconic organizations in the most fundamental categories.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">44+</span>
+                            <span class="stat-label">Articles Published</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Authors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Categories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About July Insights">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Newsletter -->
+    <!-- <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Join Our Newsletter</h2>
+                    <p class="newsletter-description">
+                        Get weekly insights on building iconic companies in fundamental categories. 
+                        Articles, analyses, and founder perspectives delivered to your inbox.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer"> -->
+        <!-- <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">JULY<span class="logo-dot">Insights</span></a>
+                    <p class="footer-tagline">
+                        World Views, Theses, Analyses on building iconic companies.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Blog</h4>
+                        <a href="#articles" class="footer-link">Articles</a>
+                        <a href="#categories" class="footer-link">Categories</a>
+                        <a href="#authors" class="footer-link">Authors</a>
+                        <a href="#" class="footer-link">Archive</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Connect</h4>
+                        <a href="#" class="footer-link">LinkedIn</a>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Newsletter</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">July Fund</h4>
+                        <a href="#" class="footer-link">Portfolio</a>
+                        <a href="#" class="footer-link">Philosophy</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="footer-bottom">
+                <p class="copyright">© 2024 July Insights. A publication by July Fund.</p>
+            </div>
+        </div>
+    </footer> -->
+
+
+
+<!-- mo-en -->
+
+    <footer class="mobile-only">
+        <div class="mobile-container">
+            <!-- Main Info Section -->
+            <div class="footer-main-info">
+                <div class="footer-logo"><span>ARKA</span></div>
+                <p class="footer-text">
+                    We believe that space doesn't just belong outside our building. It can be a natural part of your daily work life and your personal space.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>IR, Tabriz </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>123456789</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>123456789</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <!-- Accordions -->
+            <div class="accordion-section">
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('quickLinks')">
+                        <span>Quick Links</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="quickLinks">
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('services')">
+                        <span>Our Services</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="services">
+                        <ul class="footer-links">
+                            <li><a href="#services">Custom Design</a></li>
+                            <!-- <li><a href="#services"></a></li> -->
+                            <li><a href="#services"> Repair & Restoration</a></li>
+                            <li><a href="#services">Appraisal & Valuation</a></li>
+                            <li><a href="#services">Consultation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('hours')">
+                        <span>Business Hours</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="hours">
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="hours-day">Monday - Thursday</span>
+                                <span class="hours-time">9:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">Friday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">Saturday</span>
+                                <span class="hours-time">11:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; padding: 12px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; font-size: 12px; color: var(--light-gray);">
+                            <i class="fas fa-info-circle" style="margin-right: 5px;"></i>
+                            For private consultations, please schedule in advance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2023  ARKA. All rights reserved.</p>
+                <div class="copyright-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a> -->
+
+
+
+<!-- des-en -->
+
+
+<footer class="desktop-only-des">
+    <div class="gold-glow-des"></div>
+    
+    <div class="container-des">
+        <div class="footer-container-des">
+            <!-- Column 1: About & Contact -->
+            <div class="footer-column-des">
+                <div class="footer-logo-des"><span>ARKA</span></div>
+                <p class="footer-text-des">
+                    We believe that space doesn't just belong outside our building. It can be a natural part of your daily work life and your personal space.
+                </p>
+                <div class="contact-info-des">
+                    <div class="contact-item-des">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>IR , Tabriz</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-phone"></i>
+                        <span>123456789</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>123456789</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-fax"></i>
+                        <span>123456789</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@.com</span>
+                    </div>
+                </div>
+                <div class="social-links-des">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">Quick Links</h3>
+                <ul class="footer-links-des">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#work"><i class="fas fa-chevron-right"></i>Portfolio </a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 3: Services -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">Our Services</h3>
+                <ul class="footer-links-des">
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Custom Design</a></li>
+                    <!-- <li><a href="#services"><i class="fas fa-chevron-right"></i> </a></li> -->
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i>  Repair & Restoration</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Appraisal & Valuation</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Consultation</a></li>
+                    <!-- <li><a href="#services"><i class="fas fa-chevron-right"></i>  </a></li> -->
+                </ul>
+            </div>
+            
+            <!-- Column 4: Business Hours -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">Business Hours</h3>
+                <div class="hours-section-des">
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">Monday - Thursday</span>
+                        <span class="hours-time-des">9:00 AM - 9:00 PM</span>
+                    </div>
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">Friday</span>
+                        <span class="hours-time-des">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">Saturday</span>
+                        <span class="hours-time-des" style="color: var(--light-gray);">11:00 AM - 4:00 PM</span>
+                    </div>
+                </div>
+                <!-- <div style="margin-top: 25px; background: linear-gradient(145deg, rgba(212, 165, 116, 0.1), transparent); padding: 20px; border-radius: 12px; border: 1px solid rgba(212, 165, 116, 0.2);">
+                    <div style="color: var(--gold-light); font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-calendar-alt" style="color: var(--gold-secondary);"></i>
+                        <span>Online Appointment</span>
+                    </div>
+                    <div style="font-size: 13px; color: var(--light-gray); line-height: 1.7;">
+                        Book your private consultation and custom design appointment online through our website.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="copyright-des">
+            <div class="copyright-text-des">
+                <p>© 2023  ARKA . All rights reserved. | Design & Development by ARKA</p>
+            </div>
+            <div class="footer-bottom-links-des">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#faq">FAQ</a>
+                <a href="#sitemap">Sitemap</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="blog-web/en/script.js"></script>
+    <script src="blog-web/foter.js"></script>
+</body>
+</html>

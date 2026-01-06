@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلاگ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog-web/fa/styles.css">
+        <link rel="stylesheet" href="css/foter/foter-mo-fa.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="css/foter/foter-des-fa.css" media="(min-width: 768px)">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" dir="ltr">
+        <div class="container nav-container">
+            <a href="#" class="logo">AR<span class="logo-dot">KA</span></a>
+            <div class="nav-links">
+                <a href="#authors" class="nav-link">نویسندگان</a>
+                <a href="#recent" class="nav-link">انتشارات اخیر</a>
+                <a href="#categories" class="nav-link">دسته‌بندی‌ها</a>
+                <a href="#blog" class="nav-link">بلاگ منتخب</a>
+                <a href="index.html" class="nav-link">خانه</a>
+            </div>
+            <button class="menu-toggle" aria-label="منو" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">بلاگ ها</span>
+                    <span class="title-line">دیوار سبز</span>
+                    <span class="title-line">تخصصی</span>
+                </h1>
+                <p class="hero-subtitle">
+                    بررسی عمیق ساخت دیوار سبز  در حوزه‌های دکوراسیون . 
+                    دیدگاه‌های تیم ما و موسسان .
+                </p>
+                <a href="#articles" class="cta-button">
+                    <span>شروع مطالعه</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 7L7 17M7 7H17M7 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-background">
+                <div class="grid-overlay"></div>
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section id="blog" class="featured">
+        <div class="container">
+            <h2 class="section-title">بلاگ منتخب</h2>
+            <p class="section-description">
+                تحلیل‌های عمیق در مورد گیاهان  زیبا، اکتشاف  و طرز نگه داری .
+            </p>
+            
+            <div class="featured-grid">
+                <article class="featured-main">
+                    <img src="image/blog/photo_1_2025-12-07_13-31-36.jpg" alt="گل" class="article-image">
+                    <div class="article-meta">
+                        <span class="article-category">بلاگ های منتخب</span>
+                        <span class="article-date"> تیر </span>
+                    </div>
+                    <h3 class="article-title">تحلیل‌های عمیق در مورد گیاهان  زیبا، اکتشاف  و طرز نگه داری .</h3>
+                    <p class="article-excerpt">
+                            دیوار سبز یکی از دکوراسون های روز دنیا است که به سر سبزی 
+                            و حفظ محیط زیست کمک زیادی میکند
+                    </p>
+                    <!-- <div class="article-author">
+                        <div class="author-avatar">
+                            <img src="image/Portfolio/istockphoto-186559387-1024x1024.jpg" alt="حسین باریامی" class="author-avatar">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">حسین باریام جهانی</span>
+                            <span class="author-role">مدیرعامل</span>
+                        </div>
+                    </div> -->
+                    <a href="#" class="read-more">مطالعه←</a>
+                </article>
+
+                <!-- Side Featured Articles -->
+                <div class="featured-side">
+                    <article class="side-article">
+                        <img src="image/blog/photo_2025-12-07_13-31-24.jpg" alt="گل" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">اخبار</span>
+                                <span class="article-date"> دی </span>
+                            </div>
+                            <h4 class="side-article-title"> گیاهان در در طبیعت</h4>
+                            <p class="side-article-excerpt">
+                                نقش گیاهان در طبیعت
+                            </p>
+                            <a href="#" class="read-more-sm">مطالعه ←</a>
+                        </div>
+                    </article>
+
+                    <article class="side-article">
+                        <img src="image/blog/photo_2_2025-12-07_13-31-36.jpg" alt="گیاهان" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">گیاهان در نگه داری</span>
+                                <span class="article-date"> دی </span>
+                            </div>
+                            <h4 class="side-article-title">گیاهان برای نگه داری</h4>
+                            <p class="side-article-excerpt">
+                                گیاهان همچون انسان ها
+                            </p>
+                            <a href="#" class="read-more-sm">مطالعه ←</a>
+                        </div>
+                    </article>
+
+                    <article class="side-article">
+                        <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="گیاهان" class="article-image">
+                        <div class="side-article-content">
+                            <div class="side-article-meta">
+                                <span class="article-category">گیاهان خانگی</span>
+                                <span class="article-date"> تیر </span>
+                            </div>
+                            <h4 class="side-article-title">گیاهان برای نگه داری در خانه </h4>
+                            <p class="side-article-excerpt">
+                                روش های نگه داری گیاهان 
+                            </p>
+                            <a href="#" class="read-more-sm">مطالعه ←</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">دسته‌بندی‌ها</h2>
+            <p class="section-description">
+                افکار ما در حوزه‌های مختلف  را بررسی کنید.
+            </p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1475725191-1024x1024.jpg" alt="زیرساخت" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">⚒️</div>
+                        <h3 class="category-title"> زیرساخت</h3>
+                        <p class="category-description">
+                            زیر ساخت گیاهان 
+                        </p>
+                        <!-- <a href="#" class="category-link">۱۲ مقاله</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="فضا و اکتشاف" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">🌷</div>
+                        <h3 class="category-title">فضا و اکتشاف</h3>
+                        <p class="category-description">
+                            گل ها برای طبیعت
+                        </p>
+                        <!-- <a href="#" class="category-link">۸ مقاله</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/f1fc8b449e797523c4cdcb7faa42f2f2.jpg" alt="روش های نگه داری" class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">🛒</div>
+                        <h3 class="category-title">روش های نگه داری</h3>
+                        <p class="category-description">
+                            بهترین روش های نگه داری 
+                        </p>
+                        <!-- <a href="#" class="category-link">۱۵ مقاله</a> -->
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="image/Portfolio/ca6185215a725a2e0483e6098d52f2a0.jpg" alt="روش های ساخت " class="category-image">
+                    <div class="category-content">
+                        <div class="category-icon">⛏️</div>
+                        <h3 class="category-title">روش های ساخت </h3>
+                        <p class="category-description">
+                            روش های مختلف انجام دیوار سبز
+                        </p>
+                        <!-- <a href="#" class="category-link">۹ مقاله</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section id="recent" class="recent">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">انتشارات اخیر</h2>
+                <!-- <a href="#" class="view-all">نمایش همه ←</a> -->
+            </div>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="همکاری با ما" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">همکاری با ما</span>
+                            <span class="article-date"> اردیبهشت </span>
+                        </div>
+                        <h3 class="article-card-title"> پرورش گیاه </h3>
+                        <p class="article-card-excerpt">
+                            روش هایه نگه داری هر گیاه به طرز هایه گوناگون
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt ="الخان حامی" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">الخان حامی</span>
+                            </div>
+                            <span class="read-time">۵ دقیقه مطالعه</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="همکاری با ما" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">همکاری با ما</span>
+                            <span class="article-date"> اردیبهشت </span>
+                        </div>
+                        <h3 class="article-card-title"> پرورش گیاه </h3>
+                        <p class="article-card-excerpt">
+                            روش هایه نگه داری هر گیاه به طرز هایه گوناگون
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt ="الخان حامی" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">الخان حامی</span>
+                            </div>
+                            <span class="read-time">۵ دقیقه مطالعه</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <a href="#">
+                    <img src="image/Portfolio/istockphoto-1324813226-1024x1024.jpg" alt="همکاری با ما" class="article-card-image">
+                    </a>
+                    <div class="article-card-content">
+                        <div class="article-card-meta">
+                            <span class="article-category">همکاری با ما</span>
+                            <span class="article-date"> اردیبهشت </span>
+                        </div>
+                        <h3 class="article-card-title"> پرورش گیاه </h3>
+                        <p class="article-card-excerpt">
+                            روش هایه نگه داری هر گیاه به طرز هایه گوناگون
+                        </p>
+                        <div class="article-card-footer">
+                            <div class="article-author-sm">
+                                <a href="#">
+                                <img src="image/admin/IMG_20240319_023029_160.jpg" alt ="الخان حامی" class="author-avatar-sm">
+                                </a>
+                                <span class="author-name-sm">الخان حامی</span>
+                            </div>
+                            <span class="read-time">۵ دقیقه مطالعه</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors -->
+    <section id="authors" class="authors">
+        <div class="container">
+            <h2 class="section-title">نویسندگان</h2>
+            <p class="section-description">
+                دیدگاه‌ها و موسسان.
+            </p>
+            
+            <div class="authors-grid">
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="الخان حامی" class="author-card-image">
+                    <h3 class="author-card-name">الخان حامی</h3>
+                    <p class="author-card-role"> توسعه دهنده و طراح</p>
+                    <p class="author-card-location">ایران تبریز</p>
+                    <div class="author-card-topics">
+                        <span class="topic">طراح</span>
+                        <span class="topic"> تحیقیق و برسی </span>
+                    </div>
+                    <a href="#" class="author-card-link">مشاهده بلاگ ها</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="الخان حامی" class="author-card-image">
+                    <h3 class="author-card-name">الخان حامی</h3>
+                    <p class="author-card-role"> توسعه دهنده و طراح</p>
+                    <p class="author-card-location">ایران تبریز</p>
+                    <div class="author-card-topics">
+                        <span class="topic">طراح</span>
+                        <span class="topic"> تحیقیق و برسی </span>
+                    </div>
+                    <a href="#" class="author-card-link">مشاهده بلاگ ها</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="الخان حامی" class="author-card-image">
+                    <h3 class="author-card-name">الخان حامی</h3>
+                    <p class="author-card-role"> توسعه دهنده و طراح</p>
+                    <p class="author-card-location">ایران تبریز</p>
+                    <div class="author-card-topics">
+                        <span class="topic">طراح</span>
+                        <span class="topic"> تحیقیق و برسی </span>
+                    </div>
+                    <a href="#" class="author-card-link">مشاهده بلاگ ها</a>
+                </div>
+
+                <div class="author-card">
+                    <img src="image/admin/IMG_20240319_023029_160.jpg" alt="الخان حامی" class="author-card-image">
+                    <h3 class="author-card-name">الخان حامی</h3>
+                    <p class="author-card-role"> توسعه دهنده و طراح</p>
+                    <p class="author-card-location">ایران تبریز</p>
+                    <div class="author-card-topics">
+                        <span class="topic">طراح</span>
+                        <span class="topic"> تحیقیق و برسی </span>
+                    </div>
+                    <a href="#" class="author-card-link">مشاهده بلاگ ها</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <!-- <section id="about" class="about">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-content">
+                    <h2 class="about-title">درباره جولای اینسایتس</h2>
+                    <p class="about-description">
+                        جولای اینسایتس بلاگ صندوق جولای است. ما در افرادی سرمایه‌گذاری می‌کنیم که به آنها احترام می‌گذاریم، 
+                        اعتماد داریم، تحسین می‌کنیم و برای ساخت سازمان‌های نمادین در اساسی‌ترین دسته‌بندی‌ها تلاش می‌کنند.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">۴۴+</span>
+                            <span class="stat-label">مقاله منتشر شده</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">۱۲</span>
+                            <span class="stat-label">نویسنده</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">۴</span>
+                            <span class="stat-label">دسته‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="درباره جولای اینسایتس">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">©  آرکا. یک انتشارات توسط صندوق آرکا.</p>
+            </div>
+        </div>
+    </footer> -->
+
+
+
+
+    <!-- فوتر -->
+
+<!-- mo-fa -->
+
+<footer class="mobile-only footer-mo" dir="rtl">
+
+    <footer class="mobile-only">
+        <div class="mobile-container">
+            <!-- بخش اطلاعات اصلی -->
+            <div class="footer-main-info">
+                <div class="footer-logo"><span>ARkA</span></div>
+                <p class="footer-text">
+                    ما باور داریم که طبیعت فقظ متعلق به بیرون از ساختمان ما نیست طبیعت میتواند بخشی از زندگی روزمره محل کار و فضای شخصی شما باشد 
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>تبریز، خیابان طالقانی، پلاک ۱۲۳، طبقه همکف</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>۰۲۱-۸۸۷۷۶۶۵۵</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>۰۹۱۲-۱۲۳۴۵۶۷</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" title="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="تلگرام"><i class="fab fa-telegram"></i></a>
+                    <a href="#" title="آپارات"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="واتس‌اپ"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- آکاردئون‌ها -->
+            <div class="accordion-section">
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('quickLinks')">
+                        <span>دسترسی سریع</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="quickLinks">
+                        <ul class="footer-links">
+                            <li><a href="#home">صفحه اصلی</a></li>
+                            <li><a href="#about">درباره ما</a></li>
+                            <li><a href="#collections">نمونه کار ها</a></li>
+                            <li><a href="#services">خدمات</a></li>
+                            <li><a href="#blog">وبلاگ </a></li>
+                            <li><a href="#contact">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('services')">
+                        <span>خدمات تخصصی</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="services">
+                        <ul class="footer-links">
+                            <li><a href="#services">طراحی سفارشی </a></li>
+                            <li><a href="#services">رسیدگی </a></li>
+                            <li><a href="#services">تعمیر و بازسازی </a></li>
+                            <li><a href="#services">ارزیابی و قیمت‌گذاری</a></li>
+                            <li><a href="#services">مشاوره</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion('hours')">
+                        <span>ساعت کاری</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content" id="hours">
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="hours-day">شنبه - چهارشنبه</span>
+                                <span class="hours-time">۹:۰۰ - ۲۱:۰۰</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">پنجشنبه</span>
+                                <span class="hours-time">۹:۰۰ - ۱۸:۰۰</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">جمعه</span>
+                                <span class="hours-time">۱۱:۰۰ - ۱۶:۰۰</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; padding: 12px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; font-size: 12px; color: var(#ffff);">
+                            <i class="fas fa-info-circle" style="margin-left: 5px;"></i>
+                            برای مشاوره تخصصی لطفاً از قبل هماهنگ کنید.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- کپی‌رایت -->
+            <div class="copyright">
+                <p>© کلیه حقوق برای شرکت آرکا محفوظ است. ۱۴۰۲</p>
+                <div class="copyright-links">
+                    <a href="#privacy">حریم خصوصی</a>
+                    <a href="#terms">شرایط استفاده</a>
+                    <a href="#faq">سوالات متداول</a>
+                    <a href="#contact">تماس با ما</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+    <!-- دکمه بازگشت به بالا -->
+    <!-- <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a> -->
+
+
+
+
+
+<!-- des-fa -->
+
+
+
+<footer class="main-content-des" dir="rtl">
+    <footer class="desktop-only-des">
+        <div class="gold-glow-des"></div>
+    
+    <div class="container-des">
+        <div class="footer-container-des">
+            <!-- ستون اول: درباره و اطلاعات تماس -->
+            <div class="footer-column-des">
+                <div class="footer-logo-des"><span>ARKA</span></div>
+                <p class="footer-text-des">
+                    ما باور داریم که طبیعت فقظ متعلق به بیرون از ساختمان ما نیست طبیعت میتواند بخشی از زندگی روزمره محل کار و فضای شخصی شما باشد 
+                </p>
+                <div class="contact-info-des">
+                    <div class="contact-item-des">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>تبریز، خیابان طالقانی، پلاک ۱۲۳، طبقه همکف</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-phone"></i>
+                        <span>۰۲۱-۸۸۷۷۶۶۵۵</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>۰۹۱۲-۱۲۳۴۵۶۷</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-fax"></i>
+                        <span>۰۲۱-۸۸۷۷۶۶۵۶</span>
+                    </div>
+                    <div class="contact-item-des">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@talakaran.com</span>
+                    </div>
+                </div>
+                <div class="social-links-des">
+                    <a href="#" title="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="تلگرام"><i class="fab fa-telegram"></i></a>
+                    <a href="#" title="آپارات"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="لینکدین"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="پینترست"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <!-- ستون دوم: لینک‌های سریع -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">دسترسی سریع</h3>
+                <ul class="footer-links-des">
+                    <li><a href="#home"><i class="fas fa-chevron-left"></i> صفحه اصلی</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-left"></i> درباره ما</a></li>
+                    <li><a href="#collections"><i class="fas fa-chevron-left"></i> نمونه کارها</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-left"></i> خدمات</a></li>
+                    <li><a href="#blog"><i class="fas fa-chevron-left"></i> وبلاگ </a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-left"></i> تماس با ما</a></li>
+                </ul>
+            </div>
+            
+            <!-- ستون سوم: خدمات -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">خدمات تخصصی</h3>
+                <ul class="footer-links-des">
+                    <li><a href="#services"><i class="fas fa-chevron-left"></i> طراحی سفارشی </a></li>
+                    <!-- <li><a href="#services"><i class="fas fa-chevron-left"></i>  </a></li> -->
+                    <li><a href="#services"><i class="fas fa-chevron-left"></i> تعمیر و بازسازی </a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-left"></i> ارزیابی و قیمت‌گذاری</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-left"></i> مشاوره  </a></li>
+                    <!-- <li><a href="#services"><i class="fas fa-chevron-left"></i>  </a></li> -->
+                </ul>
+            </div>
+            
+            <!-- ستون چهارم: ساعت کاری -->
+            <div class="footer-column-des">
+                <h3 class="footer-title-des">ساعت کاری</h3>
+                <div class="hours-section-des">
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">شنبه - چهارشنبه</span>
+                        <span class="hours-time-des">۹:۰۰ - ۲۱:۰۰</span>
+                    </div>
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">پنجشنبه</span>
+                        <span class="hours-time-des">۹:۰۰ - ۱۸:۰۰</span>
+                    </div>
+                    <div class="hours-item-des">
+                        <span class="hours-day-des">جمعه</span>
+                        <span class="hours-time-des" style="color: var(--light-gray);">۱۱:۰۰ - ۱۶:۰۰</span>
+                    </div>
+                </div>
+                <!-- <div style="margin-top: 25px; background: linear-gradient(145deg, rgba(212, 165, 116, 0.1), transparent); padding: 20px; border-radius: 12px; border: 1px solid rgba(212, 165, 116, 0.2);">
+                    <div style="color: var(--gold-light); font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-gem" style="color: var(--gold-secondary);"></i>
+                        <span>نوبت‌دهی آنلاین</span>
+                    </div>
+                    <div style="font-size: 13px; color: var(--light-gray); line-height: 1.7;">
+                        برای مشاوره تخصصی و طراحی سفارشی، از طریق وبسایت نوبت رزرو کنید.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- کپی‌رایت -->
+        <div class="copyright-des">
+            <div class="copyright-text-des">
+                <p>© کلیه حقوق این وبسایت برای شرکت آرکا محفوظ است. ۱۴۰۲ | طراحی و توسعه توسط تیم فنی آرکا</p>
+            </div>
+            <div class="footer-bottom-links-des">
+                <a href="#privacy">حریم خصوصی</a>
+                <a href="#terms">شرایط استفاده</a>
+                <a href="#faq">سوالات متداول</a>
+                <a href="#sitemap">نقشه سایت</a>
+                <a href="#contact">تماس با ما</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</footer>
+
+    <script src="blog-web/fa/script.js"></script>
+    <script src="blog-web/foter.js"></script>
+</body>
+</html>
