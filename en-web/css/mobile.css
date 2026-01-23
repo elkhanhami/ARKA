@@ -1,4 +1,3 @@
-
 .hero-mobile {
     position: relative;
     width: 100%;
@@ -12,7 +11,6 @@
     width:100%;
     height:100%;
     object-fit:cover;
-    /* z-index:1; */
 }
 .hero-overlay {
     position: absolute;
@@ -21,7 +19,6 @@
     width:100%;
     height:100%;
     background: rgba(0,0,0,0.3);
-    /* z-index:2; */
 }
 
 header {
@@ -63,7 +60,6 @@ header nav a:hover {
 .hamburger.active div:nth-child(2) {opacity:0;}
 .hamburger.active div:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px);}
 
-/* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
     top:0;
@@ -103,7 +99,6 @@ header nav a:hover {
     font-size: 20px;
 }
 
-/* Close Button inside menu */
 .close-menu {
     position:absolute;
     top:20px;
@@ -120,7 +115,6 @@ header nav a:hover {
     left:0;
 }
 
-/* ---------- Hero Text ---------- */
 .hero-text {
     position: absolute;
     top: 20%;
@@ -136,9 +130,6 @@ header nav a:hover {
 }
 
 
-
-/* ---------- MOBILE / TABLET ---------- */
-
 header nav {
     display: none;
 }
@@ -152,7 +143,7 @@ header nav {
     flex-direction: column;
     cursor: pointer;
     gap:3px;
-    position: relative; /* اضافه شود */
+    position: relative; 
     z-index: 10;       
 }
 
@@ -163,8 +154,6 @@ header #logo {
     display:none; 
 }
 
-
-/* Mobile Logo over video */
 #mobileLogo {
     display:none;
     position:absolute;
@@ -173,7 +162,7 @@ header #logo {
     transform:translateX(-50%);
     font-size:36px;
     font-weight:bold;
-    color:#fff;
+    color:#b0b0b0;
     z-index:3;
     text-align: center;
 }
@@ -181,23 +170,6 @@ header #logo {
 #mobileLogo {
     display:block;
 } */
-
-
-
-.info-strip{padding:28px 0}
-.info-grid{
-  display:inline;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  align-items:center;
-}
-.info-item{text-align:center;padding:12px 18px;background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.05)}
-.info-ico{font-size:28px;margin-bottom:8px}
-.info-item h4{margin:6px 0;color:var(--dark)}
-.info-item p{color:var(--muted);font-size:0.95rem}
-
-
-
 
 
 #about {
@@ -223,28 +195,19 @@ header #logo {
 }
 
 
-
-
-
-/* blog  */
-
-
-
 body {
     background: #fff;
     color: #111;
     overflow-x: hidden;
 }
 
-/* ===== Wrapper ===== */
 .editorial-slider {
     width: 100%;
     padding: 140px 0 100px;
     position: relative;
-    background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #111111  0%, #111111  100%);
 }
 
-/* ===== Slide layout ===== */
 .slide-content {
     max-width: 1400px;
     margin: auto;
@@ -256,7 +219,6 @@ body {
     position: relative;
 }
 
-/* ===== Text Section ===== */
 .text-section {
     position: relative;
     z-index: 2;
@@ -267,7 +229,7 @@ body {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 28px;
-    background: linear-gradient(135deg, #000 0%, #333 100%);
+    background: linear-gradient(135deg, #ffffff   0%, #ffffff   100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
@@ -283,7 +245,7 @@ body {
 
 .text-section p {
     font-size: 17px;
-    color: #666;
+    color: #b0b0b0;
     max-width: 480px;
     line-height: 1.7;
     margin-bottom: 45px;
@@ -298,14 +260,13 @@ body {
     transition-delay: 0.4s;
 }
 
-/* ===== Enhanced Read More Link ===== */
 .read-more-link {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     font-size: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #27ae60;
     font-weight: 600;
     letter-spacing: 0.5px;
     padding-bottom: 6px;
@@ -338,15 +299,16 @@ body {
     transform: translateX(4px);
 }
 
-/* ===== Image Section ===== */
 .image-section {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(46, 204, 112, 0.397);
+    box-shadow: 0 5px 10px rgba(46, 204, 113, 0.2);
     transform: perspective(1000px) rotateY(-5deg);
     transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
+    height: 400px;
 }
 
 .swiper-slide-active .image-section {
@@ -367,8 +329,7 @@ body {
 }
 
 
-/* ===== Bottom Bar ===== */
-.bottom-bar {
+.bottom-bar-mo {
     max-width: 1400px;
     margin: 40px auto 0;
     padding: 0 35px;
@@ -377,7 +338,6 @@ body {
     gap: 40px;
 }
 
-/* Pagination */
 .swiper-pagination {
     position: static;
     display: flex;
@@ -398,7 +358,6 @@ body {
     width: 32px;
 }
 
-/* View All News - Enhanced */
 .view-all-news {
     display: inline-flex;
     align-items: center;
@@ -406,13 +365,13 @@ body {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.2px;
-    color: #111;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 12px 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #1a1a1a;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     position: relative;
@@ -424,7 +383,7 @@ body {
     color: white;
     border-color: rgb(0,0,0,0.75);
     transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(212, 0, 0, 0.2);
+    box-shadow: 0 15px 40px #2ecc71;
     padding-right: 32px;
 }
 
@@ -444,7 +403,6 @@ body {
     transform: rotate(45deg);
 }
 
-/* ===== Slide Progress Bar ===== */
 .slide-progress {
     position: absolute;
     bottom: 0;
@@ -457,7 +415,7 @@ body {
 
 .progress-fill {
     height: 100%;
-    background: #000;
+    background: #27ae60;
     width: 0%;
     transition: width 0.1s linear;
 }
@@ -497,14 +455,13 @@ body {
     }
 }
 
-/* ===== Slide Number Indicator ===== */
 .slide-counter {
     position: absolute;
     bottom: 40px;
     right: 60px;
     font-size: 14px;
     font-weight: 500;
-    color: #000;
+    color: #b0b0b0;
     letter-spacing: 2px;
     z-index: 10;
 }
@@ -517,7 +474,6 @@ body {
 
 
 #work {
-    width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
@@ -612,9 +568,6 @@ button:focus {
         text-align:center;
     }
 
-    /* Mobile */
-
-
     #work h1 {
         width:35%;
     }
@@ -626,21 +579,16 @@ button:focus {
     }
 
 
-
-        /* ===============================
-   MOBILE WORK CAROUSEL (ONLY)
-================================ */
 .gallery {
     display: none;
 }
 
 body {
   margin: 0;
-  background: #928181;
+  background: linear-gradient(135deg, #111111  0%, #111111  100%);
   font-family: system-ui, sans-serif;
 }
 
-/* ===== SLIDER ===== */
 .slider {
   display: flex;
   gap: 16px;
@@ -664,7 +612,6 @@ body {
   touch-action: pan-y;
 }
 
-/* تصویر و ویدیو */
 .card img, .card video {
   position: absolute;
   inset: 0;
@@ -677,11 +624,9 @@ body {
 .card img { opacity: 1; }
 .card video { opacity: 0; display: block; }
 
-/* کارت فعال */
 .card.active img { opacity: 0; }
 .card.active video { opacity: 1; }
 
-/* gradient */
 .card::after {
   content: "";
   position: absolute;
@@ -690,7 +635,6 @@ body {
   pointer-events: none;
 }
 
-/* محتوا و دکمه‌ها */
 .content {
   position: absolute;
   bottom: 20px;
@@ -725,21 +669,19 @@ body {
 }
 
 .btn.white { 
-  background: #fff; 
-  color: #000; 
+  background: #1a1a1a; 
+  color: #fff; 
   border: none; 
   text-decoration: none;
 }
 
 
 .btn.white:hover {
-  background: #f4f4f4; 
+  background: #229954; 
   box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
   transform: translateY(-3px);
 }
 
-
-/* ===== CONTROLS ===== */
 .controls {
   display: flex;
   align-items: center;
@@ -748,7 +690,6 @@ body {
   margin: 16px 0 22px;
 }
 
-/* progress box */
 .progress-box {
   display: flex;
   gap: 8px;
@@ -757,7 +698,6 @@ body {
   border-radius: 999px;
 }
 
-/* dot */
 .dot {
   width: 10px;
   height: 10px;
@@ -778,7 +718,6 @@ body {
   background: #fff;
 }
 
-/* play/pause button */
 .play-btn {
   width: 40px;
   height: 40px;
@@ -795,37 +734,6 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-}
-
-
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    scroll-behavior: smooth;
-    transition: background-color 0.6s ease-in-out;
-}
-
-body.work-active {
-    background-color: rgba(0, 0, 0, 0.863);
-}
-
-#work h1 {
-    color: rgb(0, 0, 0); 
-    transition: color 0.6s ease-in-out;
-}
-
-#work h1.active {
-    color: rgb(255, 255, 255);
-}
-
-.gallery-item .description {
-    color: #000000;
-    transition: color 0.6s ease-in-out;
-}
-
-body.work-active .gallery-item .description {
-    color: #ffffff;
 }
 
 }

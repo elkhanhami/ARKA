@@ -1,9 +1,3 @@
-// script.js
-/**
- * July Insights Blog
- * A complete blog website with photos
- */
-
 class BlogWebsite {
     constructor() {
         this.init();
@@ -98,41 +92,6 @@ class BlogWebsite {
         });
     }
 
-    initNewsletterForm() {
-        const form = document.querySelector('.newsletter-form');
-        const input = document.querySelector('.newsletter-input');
-        const button = document.querySelector('.newsletter-button');
-
-        form?.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            if (!input.value.trim()) return;
-            
-            input.disabled = true;
-            button.disabled = true;
-            button.textContent = 'Subscribing...';
-            
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            const successMessage = document.createElement('p');
-            successMessage.textContent = 'Thank you for subscribing!';
-            successMessage.style.color = 'var(--color-category-consumer)';
-            successMessage.style.textAlign = 'center';
-            successMessage.style.marginTop = 'var(--space-md)';
-            
-            form.parentNode.insertBefore(successMessage, form.nextSibling);
-            
-            input.value = '';
-            input.disabled = false;
-            button.disabled = false;
-            button.textContent = 'Subscribe';
-            
-            setTimeout(() => {
-                successMessage.remove();
-            }, 3000);
-        });
-    }
-
     initImageLoading() {
         const images = document.querySelectorAll('img');
         images.forEach(img => {
@@ -150,48 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
     new BlogWebsite();
 });
 
-const style = document.createElement('style');
-style.textContent = `
-    .featured-main:hover::before,
-    .side-article:hover::before,
-    .category-card:hover::before,
-    .article-card:hover::before,
-    .author-card:hover::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(
-            400px circle at var(--mouse-x) var(--mouse-y),
-            rgba(77, 171, 247, 0.08),
-            transparent 40%
-        );
-        border-radius: inherit;
-        z-index: 0;
-        pointer-events: none;
-    }
-    
-    .featured-main > *,
-    .side-article > *,
-    .category-card > *,
-    .article-card > *,
-    .author-card > * {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .read-more svg,
-    .read-more-sm svg,
-    .category-link svg,
-    .author-card-link svg,
-    .view-all svg {
-        transition: transform 0.2s ease;
-    }
-    
-    img {
-        transition: opacity 0.3s ease;
-    }
-`;
 document.head.appendChild(style);

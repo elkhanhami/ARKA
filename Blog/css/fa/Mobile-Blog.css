@@ -1,9 +1,7 @@
-/* ================= sidebar ================= */
 .desktop-sidebar {
     display: none;
 }
 
-/* sidebar logo */
 .logo {
     display: none;
 }
@@ -14,23 +12,10 @@
     display: none;
 }
 
-/* back home */
 .back-home {
     display: none;
 }
 
-/* article info */
-/* .article-info {
-    display: none;
-}
-.article-info h3 {
-    display: none;
-}
-.info-item {
-    display: none;
-} */
-
-/* table of contents */
 .table-of-contents {
     display: none;
 }
@@ -47,7 +32,6 @@
     display: none;
 }
 
-/* share sidebar */
 .share-sidebar {
     display: none;
 }
@@ -61,29 +45,10 @@
     display: none;
 }
 
-/* ================= main layout ================= */
 .article-container {
     display: none;
 }
 
-/* ================= article header ================= */
-/* .article-header {
-    display: none;
-}
-.animate-in {
-    display: none;
-}
-.article-category {
-    display: none;
-}
-.article-title {
-    display: none;
-}
-.article-subtitle {
-    display: none;
-} */
-
-/* ================= author ================= */
 .author-info {
     display: none;
 }
@@ -100,22 +65,18 @@
     display: none;
 }
 
-/* ================= article meta ================= */
 .article-meta {
     display: none;
 }
 
-/* ================= featured image ================= */
 .featured-image {
     display: none;
 }
 
-/* ================= article content ================= */
 .article-content {
     display: none;
 }
 
-/* sections */
 .article-content section {
     display: none;
 }
@@ -129,12 +90,10 @@
     display: none;
 }
 
-/* ================= highlight ================= */
 .highlight-box {
     display: none;
 }
 
-/* ================= images ================= */
 .image-grid {
     display: none;
 }
@@ -145,7 +104,6 @@
     display: none;
 }
 
-/* ================= code block ================= */
 pre {
     display: none;
 }
@@ -153,7 +111,6 @@ code {
     display: none;
 }
 
-/* ================= related articles ================= */
 .related-articles {
     display: none;
 }
@@ -176,7 +133,6 @@ code {
     display: none;
 }
 
-/* ================= reading controls ================= */
 .reading-controls {
     display: none;
 }
@@ -184,7 +140,6 @@ code {
     display: none;
 }
 
-/* font size control */
 .font-size-control {
     display: none;
 }
@@ -195,40 +150,10 @@ code {
     display: none;
 }
 
-/* ================= mobile link ================= */
 .mobile-link {
     display: none;
 }
 
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     * {
             margin: 0;
@@ -243,7 +168,6 @@ code {
             line-height: 1.7;
         }
         
-        /* هدر موبایل */
         .mobile-header {
             position: fixed;
             top: 0;
@@ -263,11 +187,11 @@ code {
             font-size: 18px;
             font-weight: 300;
             letter-spacing: 2px;
-            color: #1a1a1a;
+            color: #2ecc71;
         }
         
         .mobile-logo span {
-            color: #d4a574;
+            color: #2ecc71;
         }
         
         .header-controls {
@@ -292,10 +216,9 @@ code {
         }
         
         .icon-btn:hover {
-            background: #f5f5f5;
+            background: #2ecc71;
         }
         
-        /* محتوای اصلی */
         .mobile-container {
             padding: 80px 20px 40px;
             max-width: 700px;
@@ -309,7 +232,7 @@ code {
         .mobile-category {
             display: inline-block;
             padding: 6px 16px;
-            background: linear-gradient(135deg, #d4a574 0%, #b88c5e 100%);
+            background: linear-gradient(135deg, #2ecc71 0%, #2ecc71 100%);
             color: #0a0a0a;
             font-size: 11px;
             font-weight: 600;
@@ -350,7 +273,7 @@ code {
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #d4a574;
+            border: 2px solid #333333;
         }
         
         .meta-mobile {
@@ -371,7 +294,6 @@ code {
             margin: 25px 0;
         }
         
-        /* محتوای مقاله موبایل */
         .mobile-content {
             font-size: 18px;
             line-height: 1.8;
@@ -386,7 +308,6 @@ code {
             font-size: 26px;
             font-weight: 300;
             margin: 50px 0 20px;
-            color: #1a1a1a;
             padding-bottom: 10px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
@@ -395,7 +316,6 @@ code {
             font-size: 20px;
             font-weight: 400;
             margin: 35px 0 15px;
-            color: #2a2a2a;
         }
         
         .mobile-highlight {
@@ -403,14 +323,13 @@ code {
             padding: 30px;
             border-radius: 12px;
             margin: 30px 0;
-            border-left: 4px solid #d4a574;
+            border-right: 4px solid #2ecc71;
         }
         
         .mobile-highlight p {
             margin-bottom: 0;
             font-size: 18px;
             font-style: italic;
-            color: #444;
         }
         
         .mobile-image {
@@ -419,7 +338,6 @@ code {
             margin: 25px 0;
         }
         
-        /* نوار پیشرفت خواندن */
         .reading-progress {
             position: fixed;
             top: 60px;
@@ -437,7 +355,6 @@ code {
             transition: width 0.3s ease;
         }
         
-        /* منوی پایین موبایل */
         .mobile-bottom-nav {
             position: fixed;
             bottom: 0;
@@ -471,12 +388,11 @@ code {
             font-size: 18px;
         }
         
-        /* منوی تنظیمات */
         .settings-menu {
             position: fixed;
             bottom: 80px;
             right: 20px;
-            background: #fff;
+            background: #1a1a1a;
             border-radius: 16px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
             padding: 20px;
@@ -498,7 +414,7 @@ code {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 20px;
-            color: #1a1a1a;
+            color: #ffffff;
         }
         
         .setting-group {
@@ -509,7 +425,7 @@ code {
             display: block;
             font-size: 14px;
             margin-bottom: 10px;
-            color: #666;
+            color: #ffffff ;
         }
         
         .font-size-selector {
@@ -520,18 +436,19 @@ code {
         .font-btn {
             flex: 1;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #1a1a1a;
             background: none;
             border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
+            color: #b0b0b0;
         }
         
         .font-btn.active {
-            background: #d4a574;
+            background: #2ecc71;
             color: white;
-            border-color: #d4a574;
+            border-color: #2ecc71;
         }
         
         .theme-toggle {
@@ -539,14 +456,14 @@ code {
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            background: #f5f5f5;
+            background: #1a1a1a;
             border-radius: 12px;
             cursor: pointer;
         }
         
         .theme-label {
             font-size: 14px;
-            color: #333;
+            color: #b0b0b0;
         }
         
         .switch {
@@ -569,7 +486,7 @@ code {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #ccc;
+            background-color: #494848;
             transition: .4s;
             border-radius: 34px;
         }
@@ -587,14 +504,13 @@ code {
         }
         
         input:checked + .slider {
-            background-color: #d4a574;
+            background-color: #2ecc71;
         }
         
         input:checked + .slider:before {
             transform: translateX(26px);
         }
         
-        /* مقالات مرتبط موبایل */
         .related-mobile {
             margin-top: 60px;
             padding-top: 40px;
@@ -632,7 +548,7 @@ code {
         
         .related-category-mobile {
             font-size: 11px;
-            color: #d4a574;
+            color: #2ecc71;
             letter-spacing: 1px;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -642,10 +558,8 @@ code {
             font-size: 16px;
             font-weight: 500;
             line-height: 1.4;
-            color: #1a1a1a;
         }
         
-        /* دکمه دسکتاپ */
         .desktop-link {
             display: block;
             text-align: center;
@@ -659,7 +573,6 @@ code {
             letter-spacing: 1px;
         }
         
-        /* انیمیشن‌ها */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -669,7 +582,6 @@ code {
             animation: fadeIn 0.6s ease forwards;
         }
         
-        /* حالت تاریک */
         body.dark-mode {
             background-color: #1a1a1a;
             color: #f0f0f0;
@@ -698,7 +610,6 @@ code {
             background: #2a2a2a;
         }
         
-        /* اسکرول بار */
         .related-scroll::-webkit-scrollbar {
             height: 4px;
         }

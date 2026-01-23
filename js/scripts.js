@@ -38,9 +38,6 @@ $(document).ready(function(){
       });
 });
 
-
-// blog
-
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.editorial-slider', {
         speed: 1200,
@@ -85,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Update slide counter
     function updateSlideCounter(swiper) {
         const current = swiper.realIndex + 1;
         const total = swiper.slides.length;
@@ -95,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
             total.toString().padStart(2, '0');
     }
 
-    // Update progress bar
     function updateProgressBar(swiper, progress = 0) {
         const progressFill = document.querySelector('.progress-fill');
         const totalSlides = swiper.slides.length;
@@ -103,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         progressFill.style.width = currentProgress + '%';
     }
 
-    // Hover effects for slides
     const slides = document.querySelectorAll('.swiper-slide');
     slides.forEach(slide => {
         slide.addEventListener('mouseenter', () => {
@@ -114,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Parallax effect on mouse move
     document.querySelector('.editorial-slider').addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth - 0.5) * 20;
         const y = (e.clientY / window.innerHeight - 0.5) * 20;
@@ -126,8 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
 
 
 const slider = document.getElementById('slider');
@@ -175,7 +166,6 @@ function activate(i) {
   slider.scrollTo({ left: slideWidth() * index, behavior: 'smooth' });
 }
 
-/* update progress */
 function updateProgress() {
   cancelAnimationFrame(rafId);
   const video = videos[index];
@@ -189,14 +179,12 @@ function updateProgress() {
   step();
 }
 
-/* video ended */
 videos.forEach((video, i) => {
   video.addEventListener('ended', () => {
     activate((index + 1) % cards.length);
   });
 });
 
-/* swipe/drag */
 let startX = 0, scrollLeft = 0, isDragging = false;
 
 slider.addEventListener('mousedown', e => {
@@ -217,7 +205,6 @@ slider.addEventListener('touchstart', e => { isDragging = true; startX = e.touch
 slider.addEventListener('touchmove', e => { if(!isDragging) return; const x = e.touches[0].pageX; slider.scrollLeft = scrollLeft + (startX - x); });
 slider.addEventListener('touchend', e => { isDragging=false; activate(Math.round(slider.scrollLeft / slideWidth())); });
 
-/* play/pause */
 playBtn.onclick = () => {
   playing = !playing;
   playBtn.textContent = playing ? '| |' : '▶';
@@ -236,48 +223,14 @@ playBtn.onclick = () => {
     video.style.opacity = 0;
   }
 };
-/* init */
 activate(0);
 
-$(document).ready(function(){
-    console.log("اسکریپت تغییر رنگ فعال شد");
-    
-    $(window).on('scroll', function(){
-        var scrollTop = $(window).scrollTop();
-        
-        // انتخابگرهای درست
-        var workH1 = $('#work h1');
-        var aboutH1 = $('#bio h1'); // این مهمه: bio نه about
-        
-        console.log("کار h1 پیدا شد:", workH1.length, "درباره h1 پیدا شد:", aboutH1.length);
-        
-        if(workH1.length && aboutH1.length){
-            var workH1Top = workH1.offset().top;
-            var aboutH1Top = aboutH1.offset().top;
-            
-            console.log("موقعیت h1 کار:", workH1Top, "موقعیت h1 درباره:", aboutH1Top, "اسکرول:", scrollTop);
-            
-            if(scrollTop >= workH1Top - 100 && scrollTop <= aboutH1Top - 100){
-                console.log("🟢 داخل محدوده - رنگ تغییر میکنه");
-                $('body').addClass('work-active');
-                $('#work h1').addClass('active');
-            } else {
-                console.log("🔴 خارج از محدوده - رنگ عادی");
-                $('body').removeClass('work-active');
-                $('#work h1').removeClass('active');
-            }
-        } else {
-            console.log("❌ المنت‌ها پیدا نشدن!");
-        }
-    });
-});
 
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 const closeMenu = document.getElementById('closeMenu');
 const menuOverlay = document.getElementById('menuOverlay');
 
-// باز و بسته شدن منو
 hamburger.addEventListener('click', ()=>{
     mobileMenu.classList.add('open');
     menuOverlay.classList.add('active');
@@ -288,8 +241,6 @@ closeMenu.addEventListener('click', ()=>{
     menuOverlay.classList.remove('active');
 });
 
-
-// بسته شدن منو با کلیک روی لینک داخلی
 document.querySelectorAll('.mobile-menu a').forEach(link=>{
     link.addEventListener('click', (e)=>{
         const target = link.getAttribute('href');
@@ -302,7 +253,6 @@ document.querySelectorAll('.mobile-menu a').forEach(link=>{
     });
 });
 
-    // گالری hover
 $('.gallery-item').hover(function(){
     const video = $(this).find('video')[0];
       if(video){
@@ -318,20 +268,15 @@ $('.gallery-item').hover(function(){
       }
 });
 
-// foter mobile
-
-
         document.addEventListener('DOMContentLoaded', function() {
             const hijriYear = 1402;
             const copyrightText = document.querySelector('.copyright p');
             if (copyrightText) {
                 copyrightText.innerHTML = copyrightText.innerHTML.replace('۱۴۰۲', hijriYear);
             }
-            
-            // باز کردن اولین آکاردئون به صورت پیش‌فرض
+
             toggleAccordion('quickLinks');
             
-            // مدیریت دکمه بازگشت به بالا
             const backToTopBtn = document.getElementById('backToTop');
             
             window.addEventListener('scroll', function() {
@@ -356,7 +301,6 @@ $('.gallery-item').hover(function(){
             const header = content.previousElementSibling;
             const icon = header.querySelector('i');
             
-            // اگر آکاردئون قبلاً باز است، آن را ببند
             if (content.classList.contains('active')) {
                 content.classList.remove('active');
                 header.classList.remove('active');
@@ -364,7 +308,6 @@ $('.gallery-item').hover(function(){
                 return;
             }
             
-            // بستن همه آکاردئون‌های دیگر
             const allContents = document.querySelectorAll('.accordion-content');
             const allHeaders = document.querySelectorAll('.accordion-header');
             const allIcons = document.querySelectorAll('.accordion-header i');
@@ -387,24 +330,11 @@ $('.gallery-item').hover(function(){
                 }
             });
             
-            // باز کردن آکاردئون انتخاب شده
             content.classList.add('active');
             header.classList.add('active');
             icon.style.transform = 'rotate(180deg)';
-            
-            // اسکرول به آکاردئون باز شده
-            // setTimeout(() => {
-            //     header.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            // }, 300);
+
         }
-
-
-
-
-
-// foter desktop
-
-
 
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -414,7 +344,6 @@ $('.gallery-item').hover(function(){
                 copyrightText.innerHTML = copyrightText.innerHTML.replace('۱۴۰۲', hijriYear);
             }
             
-            // افکت hover برای آیتم‌های تماس
             const contactItems = document.querySelectorAll('.contact-item');
             contactItems.forEach(item => {
                 item.addEventListener('mouseenter', function() {
@@ -428,7 +357,6 @@ $('.gallery-item').hover(function(){
                 });
             });
             
-            // اسکرول نرم برای لینک‌ها
             const footerLinks = document.querySelectorAll('.footer-links a');
             footerLinks.forEach(link => {
                 link.addEventListener('click', function(e) {

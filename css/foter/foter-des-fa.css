@@ -1,6 +1,5 @@
-        /* رنگ‌های اصلی */
         :root {
-            --gold-primary: #ffffff;
+            --gold-primary: #27ae60;
             --gold-secondary: #3b3b3b;
             --gold-light: #f0d0b0;
             --gold-dark: #3d3d3d;
@@ -14,17 +13,9 @@
             --light-gray: #888888;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-/* 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } */
-
         body {
             font-family: 'Vazirmatn', 'IRANSans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
-            /* color: var(--white-primary); */
+            color: var(--white-primary);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -33,14 +24,9 @@
 
         .main-content-des {
             flex: 1;
-            /* padding: 70px 40px; */
             text-align: center;
-            /* background: rgba(10, 10, 10, 0.9); */
-            /* margin: 30px; */
-            /* border-radius: 20px; */
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
-            /* border: 1px solid rgba(212, 165, 116, 0.2); */
         }
 
         .main-content-des h1 {
@@ -49,7 +35,6 @@
             font-size: 2.8rem;
             font-weight: 700;
             text-shadow: 0 2px 10px rgba(212, 165, 116, 0.3);
-            /* position: relative; */
             display: inline-block;
             padding-bottom: 15px;
         }
@@ -112,14 +97,11 @@
             border: 1px solid rgba(212, 165, 116, 0.3);
         }
 
-        /* Footer Styles */
         footer {
             background: linear-gradient(180deg, var(--black-primary), #050505);
             color: var(--white-secondary);
             padding: 80px 0 40px;
-            /* position: relative; */
             overflow: hidden;
-            /* border-top: 1px solid rgba(212, 165, 116, 0.2); */
         }
 
         footer::before {
@@ -172,7 +154,7 @@
         }
 
         .footer-logo-des span {
-            color: var(--gold-primary);
+            color: #fff;
             position: relative;
         }
 
@@ -193,9 +175,7 @@
             right: 0;
             width: 70px;
             height: 3px;
-            background: linear-gradient(90deg, var(--gold-primary), var(--gold-secondary));
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
         }
 
         .footer-text-des {
@@ -205,13 +185,13 @@
             color: var(--light-gray);
             text-align: justify;
             padding-left: 10px;
-            border-left: 2px solid rgba(255, 255, 255, 0.3);
+            border-left: 2px solid #27ae60;
         }
 
         .contact-info-des {
             margin-top: 30px;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid #27ae60;
         }
 
         .contact-item-des {
@@ -261,7 +241,7 @@
             text-decoration: none;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 112, 34, 0.2);
         }
 
         .social-links-des a::before {
@@ -281,7 +261,7 @@
             color: var(--black-primary);
             transform: translateY(-5px) rotate(5deg);
             border-color: transparent;
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 112, 34, 0.2);
         }
 
         .social-links-des a:hover::before {
@@ -290,7 +270,7 @@
 
         .footer-title-des {
             font-size: 20px;
-            color: var(--white-primary);
+            color: #fff;
             margin-bottom: 30px;
             font-weight: 700;
             position: relative;
@@ -307,7 +287,6 @@
             height: 3px;
             background: linear-gradient(90deg, var(--gold-primary), transparent);
             border-radius: 2px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
         }
 
         .footer-links-des {
@@ -370,7 +349,7 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(0, 112, 34, 0.2);
             margin-top: 20px;
         }
 
@@ -401,7 +380,7 @@
         .copyright-des {
             text-align: center;
             padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid #27ae60;
             font-size: 14px;
             color: var(--light-gray);
             display: flex;
@@ -461,42 +440,11 @@
             }
         }
 
-        /* فقط برای دسکتاپ */
-        /* @media (max-width: 1024px) {
-            .desktop-only-des {
-                display: none;
-            }
-            
-            .demo-note-des {
-                background: linear-gradient(145deg, #2a1a1a, #1a0a0a);
-                border-right: 4px solid #ff4444;
-            }
-            
-            .demo-note-des::before {
-                content: "⚠️ این نسخه فقط برای دسکتاپ طراحی شده است. پنجره مرورگر را بزرگتر کنید یا نسخه موبایل را مشاهده کنید.";
-                display: block;
-                color: #ff6b6b;
-                font-weight: bold;
-                margin-bottom: 20px;
-                padding: 15px;
-                background: rgba(255, 107, 107, 0.1);
-                border-radius: 8px;
-                border: 1px solid rgba(255, 107, 107, 0.3);
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .desktop-only-des {
-                display: block;
-            }
-        } */
-
-        /* افکت‌های زیبا */
         .gold-glow-des {
             position: absolute;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(212, 165, 116, 0) 70%);
+            background: radial-gradient(circle, rgba(0, 112, 34, 0.082) 0%, rgba(212, 165, 116, 0) 70%);
             top: -150px;
             right: -150px;
             z-index: 0;
@@ -504,20 +452,17 @@
             filter: blur(20px);
         }
 
-/* ================== فوتر تبلت راست‌چین و بهینه (768px تا 1024px) ================== */
 @media (max-width: 1500px) and (min-width: 768px) {
 
-    /* کانتینر فوتر */
     .footer-container-des {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* دو ستون مساوی */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 25px;
-        text-align: right; /* راست‌چین */
+        text-align: right; 
         padding: 0 20px;
         box-sizing: border-box;
     }
 
-    /* ستون‌ها */
     .footer-column-des {
         text-align: right;
         margin-bottom: 15px;
@@ -525,7 +470,6 @@
         box-sizing: border-box;
     }
 
-    /* لوگو */
     .footer-logo-des {
         font-size: 26px;
         margin-bottom: 15px;
@@ -542,7 +486,6 @@
         width: 45px;
     }
 
-    /* توضیحات فوتر */
     .footer-text-des {
         font-size: 13px;
         text-align: right;
@@ -552,7 +495,6 @@
         line-height: 1.6;
     }
 
-    /* شبکه‌های اجتماعی */
     .social-links-des {
         display: flex;
         justify-content: flex-start;
@@ -571,7 +513,6 @@
         justify-content: center;
     }
 
-    /* آیتم‌های تماس */
     .contact-item-des {
         justify-content: flex-start;
         gap: 8px;
@@ -589,7 +530,6 @@
         font-size: 16px;
     }
 
-    /* ======== بخش ساعت کاری عمودی ======== */
     .hours-section-des {
         width: 50%;
         max-width: 50%;
@@ -598,17 +538,17 @@
         box-sizing: border-box;
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(0, 112, 34, 0.2);
         display: flex;
-        flex-direction: column; /* vertical */
+        flex-direction: column; 
         gap: 10px;
         overflow: hidden;
     }
 
     .hours-item-des {
         display: flex;
-        flex-direction: column; /* روز و ساعت زیر هم */
-        align-items: flex-start; /* راست‌چین */
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: center;
         padding: 8px 12px;
         width: 100%;
@@ -648,7 +588,6 @@
         margin-bottom: 0;
     }
 
-    /* عنوان ستون‌ها */
     .footer-title-des {
         font-size: 17px;
         margin-bottom: 18px;
@@ -660,7 +599,6 @@
         height: 2px;
     }
 
-    /* لینک‌های ستون‌ها */
     .footer-links-des {
         padding: 0;
         margin: 0;
@@ -687,7 +625,6 @@
         font-size: 11px;
     }
 
-    /* لینک‌های پایین فوتر */
     .footer-bottom-links-des {
         display: flex;
         justify-content: flex-start;
@@ -702,7 +639,6 @@
         color: var(--light-gray);
     }
 
-    /* کپی‌رایت */
     .copyright-des {
         display: flex;
         flex-direction: column;

@@ -1,8 +1,3 @@
-// script.js
-/**
- * بلاگ جولای اینسایتس - نسخه فارسی
- */
-
 class BlogWebsiteFa {
     constructor() {
         this.init();
@@ -97,44 +92,6 @@ class BlogWebsiteFa {
         });
     }
 
-    initNewsletterForm() {
-        const form = document.querySelector('.newsletter-form');
-        const input = document.querySelector('.newsletter-input');
-        const button = document.querySelector('.newsletter-button');
-
-        form?.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            if (!input.value.trim()) {
-                alert('لطفاً آدرس ایمیل خود را وارد کنید');
-                return;
-            }
-            
-            input.disabled = true;
-            button.disabled = true;
-            button.textContent = 'در حال عضویت...';
-            
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            const successMessage = document.createElement('p');
-            successMessage.textContent = 'با تشکر! اشتراک شما با موفقیت ثبت شد.';
-            successMessage.style.color = 'var(--color-category-consumer)';
-            successMessage.style.textAlign = 'center';
-            successMessage.style.marginTop = 'var(--space-md)';
-            
-            form.parentNode.insertBefore(successMessage, form.nextSibling);
-            
-            input.value = '';
-            input.disabled = false;
-            button.disabled = false;
-            button.textContent = 'عضویت';
-            
-            setTimeout(() => {
-                successMessage.remove();
-            }, 3000);
-        });
-    }
-
     initImageLoading() {
         const images = document.querySelectorAll('img');
         images.forEach(img => {
@@ -148,77 +105,15 @@ class BlogWebsiteFa {
     }
 
     setPersianDates() {
-        // تبدیل تاریخ‌های انگلیسی به فارسی (در صورت نیاز)
         const dateElements = document.querySelectorAll('.article-date');
         dateElements.forEach(element => {
-            // اینجا می‌توانید منطق تبدیل تاریخ را اضافه کنید
-            // فعلاً فقط نمایش می‌دهیم
         });
     }
 }
 
-// راه‌اندازی وقتی DOM لود شد
 document.addEventListener('DOMContentLoaded', () => {
     const blog = new BlogWebsiteFa();
     blog.setPersianDates();
 });
 
-// افزودن استایل برای افکت‌های هاور
-const style = document.createElement('style');
-style.textContent = `
-    .featured-main:hover::before,
-    .side-article:hover::before,
-    .category-card:hover::before,
-    .article-card:hover::before,
-    .author-card:hover::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: radial-gradient(
-            400px circle at var(--mouse-x) var(--mouse-y),
-            rgba(77, 171, 247, 0.08),
-            transparent 40%
-        );
-        border-radius: inherit;
-        z-index: 0;
-        pointer-events: none;
-    }
-    
-    .featured-main > *,
-    .side-article > *,
-    .category-card > *,
-    .article-card > *,
-    .author-card > * {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .read-more svg,
-    .read-more-sm svg,
-    .category-link svg,
-    .author-card-link svg,
-    .view-all svg {
-        transition: transform 0.2s ease;
-    }
-    
-    img {
-        transition: opacity 0.3s ease;
-    }
-    
-    /* تنظیمات RTL برای فلش‌ها */
-    .read-more svg,
-    .read-more-sm svg,
-    .category-link svg,
-    .author-card-link svg,
-    .view-all svg {
-        transform: scaleX(-1);
-    }
-`;
 document.head.appendChild(style);
-
-
-
-

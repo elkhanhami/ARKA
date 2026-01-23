@@ -1,5 +1,5 @@
         :root {
-            --gold-primary: #ffffff;
+            --gold-primary: #27ae60;
             --gold-secondary: #3b3b3b;
             --gold-light: #f0d0b0;
             --gold-dark: #3d3d3d;
@@ -15,15 +15,13 @@
         }
 
         * {
-            /* margin: 0; */
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
             font-family: 'Segoe UI', 'Helvetica Neue', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
-            /* color: var(--white-primary); */
+            color: var(--white-primary);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -73,7 +71,6 @@
             color: var(--gold-primary);
         }
 
-        /* Footer Styles for Mobile */
         .mobile-container {
             width: 100%;
             padding: 0 25px;
@@ -85,7 +82,7 @@
             padding: 50px 0 25px;
             position: relative;
             overflow: hidden;
-            border-top: 1px solid rgba(212, 165, 116, 0.2);
+            border-top: 1px solid #27ae60;
         }
 
         footer::before {
@@ -95,14 +92,12 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
         }
 
-        /* Main Info Section */
         .footer-main-info {
             padding-bottom: 30px;
             margin-bottom: 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid #27ae60;
         }
 
         .footer-logo {
@@ -116,7 +111,7 @@
         }
 
         .footer-logo span {
-            color: var(--gold-primary);
+            color: #fff;
         }
 
         .footer-logo::after {
@@ -136,7 +131,6 @@
             color: var(--light-gray);
         }
 
-        /* Contact Information */
         .contact-info {
             margin-bottom: 25px;
         }
@@ -157,7 +151,6 @@
             margin-top: 2px;
         }
 
-        /* Social Media */
         .social-links {
             display: flex;
             gap: 12px;
@@ -189,7 +182,6 @@
             border-color: transparent;
         }
 
-        /* Accordion System */
         .accordion {
             margin-bottom: 10px;
         }
@@ -205,18 +197,18 @@
             align-items: center;
             color: var(--white-primary);
             font-weight: 600;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid #27ae5f3a;
             transition: var(--transition);
             font-size: 16px;
         }
 
         .accordion-header:hover {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), var(--black-secondary));
-            border-color: rgba(255, 255, 255, 0.4);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.089), #27ae5f42);
+            border-color: #27ae5f42;
         }
 
         .accordion-header.active {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), var(--black-secondary));
+            background: linear-gradient(145deg, #27ae5f42, var(--black-secondary));
             border-color: var(--gold-primary);
         }
 
@@ -239,7 +231,7 @@
             border-radius: 0 0 10px 10px;
             margin-top: -8px;
             padding: 0 20px;
-            border: 1px solid rgba(212, 165, 116, 0.1);
+            border: 1px solid #27ae60;
             border-top: none;
         }
 
@@ -249,7 +241,6 @@
             margin-bottom: 15px;
         }
 
-        /* Links inside accordion */
         .footer-links {
             list-style: none;
             padding: 0;
@@ -291,7 +282,6 @@
             padding-left: 15px;
         }
 
-        /* Business Hours */
         .hours-list {
             color: var(--light-gray);
             font-size: 14px;
@@ -320,11 +310,10 @@
             font-weight: 600;
         }
 
-        /* Copyright */
         .copyright {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid #27ae60;
             font-size: 12px;
             color: var(--light-gray);
             line-height: 1.6;
@@ -365,7 +354,6 @@
             width: 100%;
         }
 
-        /* فقط برای موبایل */
         @media (min-width: 769px) {
             .mobile-only {
                 display: none;
@@ -400,7 +388,6 @@
             }
         }
 
-        /* Back to Top Button */
         .back-to-top {
             position: fixed;
             bottom: 25px;

@@ -38,13 +38,17 @@
     display: none;
 }
 
+.bottom-bar{
+    display: none;
+}
+
 .only-phone-logo {
     display: table;
 }
 .mobile-menu {
     display: table;
 } 
-/* wrapper */
+
 .main-content-des {
     display: none;
 }
@@ -52,12 +56,10 @@
     display: none;
 }
 
-/* glow effect */
 .gold-glow-des {
     display: none;
 }
 
-/* layout */
 .container-des {
     display: none;
 }
@@ -68,7 +70,6 @@
     display: none;
 }
 
-/* main info */
 .footer-logo-des {
     display: none;
 }
@@ -76,7 +77,6 @@
     display: none;
 }
 
-/* contact */
 .contact-info-des {
     display: none;
 }
@@ -84,7 +84,6 @@
     display: none;
 }
 
-/* social */
 .social-links-des {
     display: none;
 }
@@ -92,7 +91,6 @@
     display: none;
 }
 
-/* footer links */
 .footer-title-des {
     display: none;
 }
@@ -106,7 +104,6 @@
     display: none;
 }
 
-/* hours */
 .hours-section-des {
     display: none;
 }
@@ -120,12 +117,10 @@
     display: none;
 }
 
-/* online booking */
 .online-booking-des {
     display: none;
-} /* برای بخش نوبت‌دهی آنلاین، اگر بخوای کلاس بدی */
+} 
 
-/* copyright */
 .copyright-des {
     display: none;
 }
@@ -147,7 +142,9 @@
 .hero {
     display: table;
 }
-
+.bottom-bar-mo{
+    display: none;
+}
 
 .info-strip {
     display: none;
@@ -166,17 +163,14 @@
     display: none;
 }
 
-/* visibility */
 .mobile-only {
     display: none;
 }
 
-/* layout */
 .mobile-container {
     display: none;
 }
 
-/* main info */
 .footer-main-info {
     display: none;
 }
@@ -187,7 +181,6 @@
     display: none;
 }
 
-/* contact */
 .contact-info {
     display: none;
 }
@@ -195,12 +188,10 @@
     display: none;
 }
 
-/* social */
 .social-links {
     display: none;
 }
 
-/* accordion */
 .accordion-section {
     display: none;
 }
@@ -214,7 +205,6 @@
     display: none;
 }
 
-/* footer links */
 .footer-links {
     display: none;
 }
@@ -225,7 +215,6 @@
     display: none;
 }
 
-/* hours */
 .hours-list {
     display: none;
 }
@@ -239,7 +228,6 @@
     display: none;
 }
 
-/* copyright */
 .copyright {
     display: none;
 }
